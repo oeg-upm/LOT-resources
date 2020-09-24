@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Copyright 2015 Idafen Santana, Mar’a Poveda
+%
+%Licensed under the Apache License, Version 2.0 (the "License");
+%you may not use this file except in compliance with the License.
+%You may obtain a copy of the License at
+%
+%    http://www.apache.org/licenses/LICENSE-2.0
+%
+%Unless required by applicable law or agreed to in writing, software
+%distributed under the License is distributed on an "AS IS" BASIS,
+%WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+%See the License for the specific language governing permissions and
+%limitations under the License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[
+textsize=tiny
+]{todonotes}
+
+\usepackage{marginnote}
+\renewcommand{\marginpar}{\marginnote}
+\begin{document}
+
+\title{ORSD template for \LaTeX{}}
+\author{Idafen Santana \& Mar\'ia Poveda}
+\maketitle
+
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{| l | l | l | l  | l | l | l |l| }
+\hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{A0A0A0}\textbf{Ontology Requirements Specification Document}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1. Purpose}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2. Scope}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3. Implementation Language (optional)\todo{For Semantic Web the implementation is usually OWL.}}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4. Intended End-Users (optional)\todo{This can be filled to provide extra information about the users of the ontology.}}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{
+User 1. Description of the user... \newline 
+User 2. Description of the user... \newline 
+User 3. Description of the user...  
+}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5. Intended Uses}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{
+Use 1. Description of the use... \newline 
+Use 2. Description of the use... \newline 
+Use 3. Description of the use...  
+}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6. Ontology Requirements}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Non-Functional  Requirements}}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{
+NFR 1. Description of the requirement... \newline 
+NFR 2. Description of the requirement... \newline 
+NFR 3. Description of the requirement...  }                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{|m{11.0cm}|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Functional  Requirements: : Lists or tables of requirements written as Competency Questions and sentences }}                                                                                                                                                                                                                                                         \\ \hline
+\multicolumn{4}{|c|}{\cellcolor[HTML]{EFEFEF}CQG1. XXXX}                    & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}CQG2. YYYY}    \\ \hline
+
+\multicolumn{4}{ | m{5cm} |}{
+CQ1. Competency question 1 \newline 
+CQ2. Competency question 2 \newline 
+CQ3. Competency question 3}	    & 
+
+\multicolumn{4}{ m{5cm} |}{
+CQ4. Competency question 5 \newline 
+CQ5. Competency question 6 \newline 
+CQ6. Competency question 7}			\\ \hline
+
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7. Pre-Glossary of Terms (optional)\todo{This pre-glossary is not needed if requirements are written as tables. In the case of competency questions and sentences, it can be replaced by a tag cloud.}}}                                                                                                                                                                                                                                                     \\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Terms from Competency Questions + Frequency}}                                                                                                                                                                                                                                                     \\ \hline
+\multicolumn{4}{ | m{5cm} | }{
+Term1 Freq1 \newline 
+Term2 Freq2  
+}	& 
+\multicolumn{4}{ m{5cm} | }{
+Term3 Freq3 \newline 
+Term4 Freq4 
+}      
+
+        
+\\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Terms from Answers + Frequency}}                                                                                                                                                                                                                                                     \\ \hline
+\multicolumn{4}{ | m{5cm} | }{
+Term1 Freq1 \newline 
+Term2 Freq2  
+}	& 
+\multicolumn{4}{ m{5cm} | }{
+Term3 Freq3 \newline 
+Term4 Freq4 
+}   
+\\ \hline
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{c. Objects}}                                                                                                                                                                                                                                                     \\ \hline
+\multicolumn{8}{| p{10.0cm} |}{Object 1, Object 2, Object 3, Object 4, Object 5, ...}                                                                                                                                                                                                                                                      \\ \hline
+
+\end{tabular}
+\label{tab:ORSD}
+\vspace{-0.1in}
+\end{table}
+
+\end{document}
