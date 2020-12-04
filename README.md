@@ -5,7 +5,7 @@ This repository contains the resources associated to LOT methodology.
 The repository includes a template for generating an ORSD for an ontology in the following formats: 
 * Microsoft word
 * LaTex file
-* 
+ 
 ##### Methodology figures
 If you want to use these figures, please follow the guidelines:
 * If you want to use the figures without modifications:
