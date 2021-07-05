@@ -5,6 +5,10 @@ This repository contains the resources associated to LOT methodology.
 The repository includes a template for generating an ORSD for an ontology in the following formats: 
 * Microsoft word
 * LaTex file
+
+##### Ontology requirements list
+The repository includes a template for the list of functional requirements for an ontology in the following formats: 
+* Excel file
  
 ##### Methodology figures
 If you want to use these figures, please follow the guidelines:
