@@ -1,5 +1,5 @@
 # LOT-resources
-This repository contains the resources associated to LOT methodology.
+This repository contains the resources associated to LOT methodology including the website.
 
 ##### Ontology requirements specification document (ORSD)
 The repository includes a template for generating an ORSD for an ontology in the following formats: 
