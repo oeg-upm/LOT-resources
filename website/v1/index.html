@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>LOT - Linked Open Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+      <link rel="stylesheet" href="index_files/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="index_files/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+    <link href="index_files/bootstrapLOT.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        position: relative;
+    height: 100%;
+      }
+    </style>
+    <link href="index_files/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:8080/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:8080/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:8080/bootstrap/assets/ico/apple-touch-icon-72pcomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://localhost:8080/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://localhost:8080/bootstrap/assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">LOT</a>
+          <div class="nav-collapse collapse">
+
+          </div><!--/.nav-collapse
+    <!--    </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="hero-unit">
+        <h1>Linked Open Terms</h1>
+        <br>
+		<p>LOT (Linked Open Terms) Methodology is a reuse-based lightweight method for developing Linked Data ontologies and 
+		vocabularies. This website will provide support for following the LOT methodology in your developments.</p>
+        
+      </div>
+
+      
+      <!-- Activities  -->
+
+	 	<div class="container-fluid">
+	 	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  			<p>Please note that we are working in a more complete methodology (we are including iterations, sprints, issue tracking, etc.) and also the steps in the workflow below might be modified in next versions.</p>
+  			
+		</div>
+		 <div class="text-center">
+			 <figure class="figure">
+		  		<img src="index_files/img/lot-workflow.png" class="figure-img img-fluid rounded" alt="LOT workflow.">
+		  		<figcaption class="figure-caption text-right">LOT activities workflow simplified.</figcaption>
+			</figure>
+		</div>
+		</div>
+			   
+		<div class="container-fluid">
+      		<dl class="row">
+				  <dt class="col-md-3">1. Requirement definition</dt>
+				  <dd class="col-md-9 "><p>This activity refers to the activity of collecting the requirements that the ontology should fulfil (for example, reasons to build the ontology, identification of target groups and intended uses). (<a href="https://link.springer.com/book/10.1007/978-3-642-24794-1" target="_blank">Taken from NeOn Methodology</a>).</p>
+				  <p>These requirements can be related to the purpose of usage of the ontology, to the domain that the ontology is covering, or to technical details of the ontology, among others.</p>
+					      <ul class="list-unstyled">
+					      	  <li><strong>Tools:</strong> mind map, text editor, etc </li>
+							  <li><strong>Proposed references:</strong>
+							    <ul>
+							      <li>NeOn Guidelines for non functional requirements.</li>
+							      <li><a href="https://link.springer.com/chapter/10.1007/978-0-387-34847-6_3" target="_blank">Competency Questions technique</a> </li>
+							    </ul>
+							  </li>
+							</ul>				  
+					</dd>
+				  <dt class="col-md-3">2. Term extraction</dt>
+				  <dd class="col-md-9 ">
+				    <p>This activity consists in identifying basic concepts and the relationships between those concepts are extracted. These extracted terms should consist of not only the terms from the data source, but also of synonyms of those terms.</p>
+				    <p>The terminology might be extracted from the Competency Questions (<a href="https://link.springer.com/book/10.1007/978-3-642-24794-1" target="_blank">Guidelines from NeOn Methodology</a> or from the data, for what you might have domain expert advice.</p>  
+				    	<ul class="list-unstyled">
+					      	  <li><strong>Tools:</strong> PoS taggers, Freeling, etc.</li>
+							</ul>
+				  </dd>
+				
+				  <dt class="col-md-3">3. Ontology search</dt>
+				  <dd class="col-md-9 "><p>This activity consists in looking for existing ontologies that best fit the previously-extracted terms (and their synonyms). Note that this activity don't need to be carried out at this moment necessarily, it can be postpone to be done before ontology implementation. </p>
+				  		<ul class="list-unstyled">
+							  <li><strong>Tools</strong> (this is a limited list of ontology registries and indexes):
+							    <ul>
+								  
+							      <li>General purpose:
+								      <ul>
+									      <li> <a href="http://lov.okfn.org/" target="_blank">Linked Open Vocabularies</a> </li>
+									      <li><a href="http://vocab.linkeddata.es/" target="_blank">vocab.linkeddata.es</a></li>
+								    	</ul>
+								  </li>
+								  <li>IoT
+								      <ul>
+										  <li><a href="http://saref.linkeddata.es/" target="_blank">SAREF</a></li>
+										  <li><a href="http://vicinity.iot.linkeddata.es/" target="_blank">VICINITY</a></li>
+										  <li><a href="http://lov4iot.appspot.com/?p=ontologies" target="_blank">LOV4IoT</a></li>
+								    	</ul>
+								   </li>
+							      <li>Smart cities
+								      <ul>
+										  <li><a href="http://vocab.linkeddata.es/datosabiertos/" target="_blank">http://vocab.linkeddata.es/datosabiertos/</a></li>
+										  <li><a href="http://smartcity.linkeddata.es/" target="_blank">http://smartcity.linkeddata.es/</a></li>
+								    	</ul>
+								   </li>
+								  <li>Biology
+								  	<ul>
+									  <li><a href="http://bioportal.bioontology.org/" target="_blank">BioPortal</a></li>
+								    	</ul>
+								   </li>
+								  <li>Agriculture
+								  	<ul>
+									  <li><a href="http://agroportal.lirmm.fr/" target="_blank">AgroPortal</a></li>
+								    </ul>
+								   </li>
+							    </ul>
+							  </li>
+							</ul>
+				  </dd>
+				
+				  <dt class="col-md-3">4. Ontology selection</dt>
+				  <dd class="col-md-9 ">
+				  		<p>During this activity, the ontologies and/or ontology elements found in the previous step that fit the ontology needs are selected. The following criteria could be used to select certain elements or ontologies:</p>
+				  		<ul>
+							<li>the semantics of the class or property in the ontology is related to the term</li>
+							<li>if the term relates to a class, the class in the ontology has as many properties that correlate to the term as possible</li>
+							<li>the ontology that describes the class or property related to the search term is widely accepted and used</li>
+						</ul>
+				  </dd>
+				  
+				  <dt class="col-md-3">5. Initial conceptualization definition</dt>
+				  <dd class="col-md-9 "><p>Ontology conceptualization refers to the activity of organizing and structuring the information (data, knowledge, etc.), obtained during the acquisition process, into meaningful models at the knowledge level and according to the ontology requirements specification document. (<a href="https://link.springer.com/book/10.1007/978-3-642-24794-1" target="_blank">Taken from NeOn Methodology</a>) </p>
+				  		<p>The aim of this activity is to build an ontology model from the ontological requirements identified in the requirements specification process. During the ontology conceptualization, the domain knowledge obtained from the ORSD document is organized and structured into a model by the ontology developers. </p>
+				  		<p>This step can be done for a subset of the requirements selected for the first iteration. After checking whether the model can represent all the requirements, the model would be completed if needed in the activity "6. Complete conceptualization definition". </p>
+
+				  </dd>
+				  
+				  <dt class="col-md-3">6. Complete conceptualization definition</dt>
+				  <dd class="col-md-9 "><p> In case it is needed, complete you conceptualization in order to cover or the requirements defined or the subset of them defined for this iteration. </p>
+				  </dd>
+				  
+				  <dt class="col-md-3">7. Ontology implementation</dt>
+				  <dd class="col-md-9 "><p>During this activity, the ontology development team generates computable models in the OWL language from the ontology model. </p>						<p>The ontology code resultant from this activity includes metadata, such as creator, title, publisher, license and version of the ontology.</p>
+				  		<ul class="list-unstyled">
+					      	  <li><strong>Tools:</strong> Protégé, WebProtege, TopBraidComposer... 
+					      	  	<ul>
+							      <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> </li>
+							      <li><a href="http://webprotege.stanford.edu/" target="_blank">Web Protégé</a> </li>
+							      <li><a href="https://www.topquadrant.com/tools/modeling-topbraid-composer-standard-edition/" target="_blank">TopBraid Composer</a> </li>
+							      <li><a href="http://www.cognitum.eu/semantics/FluentEditor/" target="_blank">Fluent Editor</a> </li>
+
+							    </ul>
+					      	  </li>
+								
+								<li><strong>Recommended resources:</strong>
+							    <ul>
+							      <li><a href="http://www.ksl.stanford.edu/people/dlm/papers/ontology-tutorial-noy-mcguinness-abstract.html" target="_blank">Ontology Development 101: A Guide to Creating Your First Ontology</a> </li>
+							      <li><a href="http://www.w3.org/2001/sw/BestPractices/" target="_blank">Semantic Web Best Practices and Deployment Working Group</a></li>
+							    </ul>
+							  </li>
+							  
+							  <li><strong>Recommendations:</strong>
+							    <ul>
+							      <li>Link to existing entities</li>
+							      <li>Provide human readable documentation
+								      <ul>
+								      <li><a href="https://www.sciencedirect.com/science/article/pii/S1877042815056608" target="_blank">Lexicalizing Ontologies: The Issues Behind the Labels</a></li>
+								      <li><a href="http://www.semantic-web-journal.net/content/multilingual-linked-data-patterns" target="_blank">Multilingual Linked Data Patterns</a></li>
+
+								     </ul>
+							      </li>
+							      <li>Keep the semantics of the reused elements</li>
+							      <li><a href="http://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html" target="_blank">Provide metadata</a></li>
+							    </ul>
+							  </li>
+							</ul>
+				  </dd>
+				  
+				  <dt class="col-md-3">8. Ontology evaluation</dt>
+				  <dd class="col-md-9 "><p>This activity  refers to the activity of checking the technical quality of an ontology against a frame of reference. (<a href="https://link.springer.com/book/10.1007/978-3-642-24794-1" target="_blank">Taken from NeOn Methodology</a>)</p>
+				  		<ul class="list-unstyled">
+				  		<p> Some aspect to evaluate ar: modelling issues, domain coverage especially for data driven, conformance with Linked Data principles, etc. </p>
+							  <li><strong>Proposed techniques/tools:</strong> (more techniques in the <a href="https://link.springer.com/chapter/10.1007/978-3-642-24794-1_9" target="_blank">NeOn methodology Chapter 6</a>)
+							    <ul>
+							      <li>Modelling issues: <a href="http://oops.linkeddata.es/" target="_blank">OOPS!</a> (stand-alone or within <a href="http://ontoology.linkeddata.es/" target="_blank">OnToology</a>), reasoners, manually review, etc.</li>
+							      <li>Domain coverage: based on the data/terms to be represented</li>
+							      <li>Application based: check queries</li>
+							      <li>Syntax issues: syntax validators</li>
+							    </ul>
+							  </li>
+							</ul>
+				  </dd>
+				  
+				  <dt class="col-md-3">9. Ontology documentation</dt>
+				  <dd class="col-md-9 ">
+				  		<p>During this activity human oriented documentation is produced in order to facilitate its used. The HTML description of the ontology usually describes the classes, properties and data properties of the ontology. It is a good practice to include the license URI and title being used and metadata, such as creator, publisher, date of creation, last modification or version number.</p>
+				  		<ul class="list-unstyled">
+					      	  <li><strong>Tools:</strong> 
+					      	  	<ul>
+							      <li><a href="https://github.com/dgarijo/Widoco/releases" target="_blank">Widoco</a> (stand-alone or within <a href="http://ontoology.linkeddata.es/">OnToology</a>)</li>
+							      <li><a href="http://www.essepuntato.it/lode" target="_blank">LODE</a></li>
+							      <li><a href="https://bitbucket.org/fundacionctic/parrot/wiki/Home" target="_blank">Parrot</a></li>
+							    </ul>
+							    </li>
+					      	  <li>Consider also including examples of how to use the ontology and diagrams, either automatically generated (e.g. with <a href="http://vowl.visualdataweb.org/webvowl.html" target="_blank">WebVOWL</a>) or manually (e.g. with <a href="https://thepetiteontologist.wordpress.com/2017/07/19/some-ideas-for-ontology-graphical-representations/" target="_blank">Some ideas for ontology graphical representations</a>). </li>
+						</ul>
+				  </dd>
+				  
+				  <dt class="col-md-3">10. Ontology publication</dt>
+				  <dd class="col-md-9 "><p>The aim of the ontology publication process is to provide an online ontology accessible both as a human-readable documentation and a machine-readable file from its URI. The ontology needs to be evaluated before its publication to guarantee that is ready to be used.</p>
+				  		<ul class="list-unstyled">
+					      	  <li><strong>Tools:</strong><a href="http://ontoology.linkeddata.es/" target="_blank">OnToology</a></li>
+							  <li><strong>Proposed references:</strong>
+							  	<ul>
+							      <li><a href="https://www.w3.org/TR/swbp-vocab-pub/" target="_blank">Best Practice Recipes for Publishing RDF Vocabularies</a></li>
+							      <li><a href="https://linkingresearch.wordpress.com/2017/01/23/how-to-easily-publish-your-ontology-permanently-ontoolgy-and-w3id/" target="_blank">How to (easily) publish your ontology permanently: OnToolgy and w3id</a></li>
+							    </ul>
+							   </li>
+							</ul>
+				  </dd>
+			</dl>
+	   </div>
+	   
+	   
+
+	   
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-4">
+          <h2>PhD symposium</h2>
+          <p>LOT was first presented at the <a href="http://2012.eswc-conferences.org/program/phd-symposium">PhD symposium at the 9th Extended Semantic Web Conference 
+          (ESWC2012)</a> in Heraklion, Greece. </p>
+          <p>The paper is focused on the planned research methodology and the research questions to 
+          be addressed. </p>
+          <p><a class="btn btn-info" href="http://oa.upm.es/14479/1/ESWC2012-DS-Camera_Ready_v05.pdf">See paper »</a></p>
+        </div>
+        <div class="col-4">
+          <h2>OntologySummit</h2>
+          <p>LOT has been presented during the <a href="http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014"> OntologySummit2014</a> during the
+          second session of the track <a href="http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_03_13">Track-B: Making use of Ontologies: Tools, Services, and Techniques</a>.</p>
+          <p>This talk was mainly focused on the identified gaps on the state of the art and the contributions LOT will provide for each
+           activity.</p>
+          <p><a class="btn btn-info" href="http://www.slideshare.net/MariaPovedaVillalon/mpoveda-ontologysummit13march2014">See slides »</a></p>
+       </div>
+        <div class="col-4">
+          <h2>OOPS!</h2>
+          <p>The OntOlogy Pitfall Scanner! will be integrated in LOT.</p>
+		  <p>OOPS! is a web-based tool, independent of any ontology development environment, for detecting 
+		  potential pitfalls that could lead to modelling errors. This tool is intended to help ontology 
+		  developers during the ontology validation activity.</p>
+          <p><a class="btn btn-info" href="http://www.oeg-upm.net/oops" target="_blank">Go to OOPS! »</a></p>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p><a href="http://purl.org/net/mpoveda" target="_blank">María Poveda-Villalón</a> - Contact email: lot(at)delicias.dia.fi.upm.es. Latest revision April 2018</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="index_files/bootstrap-transition.js"></script>
+    <script src="index_files/bootstrap-alert.js"></script>
+    <script src="index_files/bootstrap-modal.js"></script>
+    <script src="index_files/bootstrap-dropdown.js"></script>
+    <script src="index_files/bootstrap-tab.js"></script>
+    <script src="index_files/bootstrap-tooltip.js"></script>
+    <script src="index_files/bootstrap-popover.js"></script>
+    <script src="index_files/bootstrap-button.js"></script>
+    <script src="index_files/bootstrap-collapse.js"></script>
+    <script src="index_files/bootstrap-carousel.js"></script>
+    <script src="index_files/bootstrap-typeahead.js"></script>
+        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+
+  
+
+</body></html>

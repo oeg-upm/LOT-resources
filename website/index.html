@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>LOT - Linked Open Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="index_files/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index_files/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Le styles -->
+    <link href="index_files/bootstrapLOT.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding: 65px 0 0 0;
+            position: relative;
+            height: 100%;
+
+        }
+
+    </style>
+    <!--  <link href="index_files/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+        $(document).ready(function () {
+            $("#impl").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#implli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#implementation').addClass('in active');
+            });
+            $("#reqs").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#reqsli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#requirements').addClass('in active');
+            });
+            $("#maint").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#maintli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#maintenance').addClass('in active');
+            });
+            $("#publi").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#publili').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#publication').addClass('in active');
+            });
+        });
+
+    </script>
+    <!-- Fav and touch icons -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137960511-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137960511-1');
+    </script>
+
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="logo" src="resources/images/lot.png" width="20%" height="20%">
+        </div>
+        &nbsp;&nbsp;
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#details">Activities</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#cite">How to cite </a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<div class="container-fluid">
+
+
+    <section id="intro">
+
+        <!-- Jumbotron -->
+        <div class="container-fluid  hero-unit">
+
+            <h1 style="text-align: center">Linked Open Terms</h1>
+            <h2 style="text-align: center">Industrial version</h2>
+
+            <br>
+            <div class="container">
+                <div class="row">
+                    <p style="text-align: center">LOT (Linked Open Terms) Methodology is an industrial method for
+                        developing ontologies and
+                        vocabularies. This website will provide support for following the LOT methodology in your
+                        developments.</p>
+                </div>
+            </div>
+
+
+            <!-- Workflow  -->
+
+            <div class="container-fluid">
+                <div class="text-center">
+                    <img src="resources/images/workflow.png" class="figure-img img-fluid rounded" usemap="#map"
+                         alt="LOT workflow.">
+                    <map name="map">
+                        <area shape="rect" coords="1,49,122,107" href="#requirements"/>
+                        <area shape="rect" coords="152,47,267,109" href="#implementation"/>
+                        <area shape="rect" coords="299,46,422,107" href="#publication"/>
+                        <area shape="rect" coords="463,49,580,109" href="#maintenance"/>
+                    </map>
+                </div>
+                <br>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Details -->
+    <section id="details">
+        <div class="container-fluid" id="tabs">
+            <h2 style="text-align: center;">Activities detailed view</h2>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav nav-tabs">
+                        <li class="active" id="reqsli">
+                            <a data-toggle="tab" href="#requirements">Ontology requirements specification</a>
+                        </li>
+                        <li id="implli">
+                            <a data-toggle="tab" href="#implementation">Ontology implementation</a>
+                        </li>
+                        <li id="publili">
+                            <a data-toggle="tab" href="#publication">Ontology publication</a>
+                        </li>
+                        <li id="maintli">
+                            <a data-toggle="tab" href="#maintenance">Ontology maintenance</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="panel-body">
+            <div class="tab-content">
+                <div id="requirements" class="tab-pane fade in active ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="resources/images/requirements.png"
+                                             class="figure-img img-fluid rounded" height="90%" width="90%"
+                                             alt="Requirements specification workflow.">
+                                        <figcaption class="figure-caption text-center">Requirements specification
+                                            workflow
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p>
+                                    The aim of the requirements specification process is to state why the ontology is
+                                    being built and to
+                                    identify and define the requirements the ontology should fulfil. Taking as input the
+                                    documentation and
+                                    data provided by domain experts and users, the ontology
+                                    development team generates a first proposal of ontological requirements written in
+                                    the form of
+                                    competency questions or statements. In this step, involvement and
+                                    commitment by experts in the specific domain at hand is required to generate the
+                                    appropriate
+                                    industry perspective and knowledge.
+                                    The <a href="https://link.springer.com/chapter/10.1007/978-3-030-21348-0_29"
+                                           target="_blank"> CORAL corpus</a>, which includes real-world requirements and
+                                    lexico-syntactic patterns to write requirements, can be taken as a reference.
+                                    Moreover, <a href="https://github.com/oeg-upm/LOT-resources/tree/master/ORSD"
+                                                 target="_blank">this GitHub repository</a> provides a Microsoft Word
+                                    and a LaTex template for an ontology requirement specification document (ORSD).
+                                </p>
+                                <p>
+                                    The domain experts and users in collaboration with the ontology development team has
+                                    to
+                                    validate whether the ontology requirements defined in the previous step are correct
+                                    and complete.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li><a href="https://link.springer.com/book/10.1007/978-3-642-24794-1"
+                                                   target="_blank">NeOn Guidelines for non functional requirements.</a>
+                                            </li>
+                                            <li><a href="https://link.springer.com/chapter/10.1007/978-0-387-34847-6_3"
+                                                   target="_blank">Competency Questions technique</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <br>
+
+                                 <p>For further recommendations, resources, tips and tool recommendations check: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                                 </p>
+
+
+
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="implementation" class="tab-pane fade ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="resources/images/implementation.png"
+                                             class="figure-img img-fluid rounded" height="90%" width="90%"
+                                             alt="Ontology implementation workflow.">
+                                        <figcaption class="figure-caption text-center">Ontology implementation
+                                            workflow
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p> The aim of the ontology implementation process is to build the ontology using a
+                                    formal language,
+                                    based on the ontological requirements identified by the domain experts. After
+                                    defining the first set
+                                    of requirements, though modification and addition of requirements is allowed during
+                                    the
+                                    development, the ontology implementation phase is carried out through a number of
+                                    sprints. The
+                                    ontology developers schedule and plan the ontology development according to the
+                                    prioritization of
+                                    the requirements in the ontology requirements specification process. The ontology
+                                    development
+                                    team builds the ontology iteratively, implementing only a certain number of
+                                    requirements in each
+                                    iteration. The output of each iteration is a new version of the ontology. This
+                                    activity includes several sub-activities: </p>
+                                <ul>
+                                    <li>
+                                        <strong>Conceptualization</strong>: the aim of this activity is to build an
+                                        ontology model from the ontological requirements identified in
+                                        the requirements specification process. During the ontology conceptualization,
+                                        the domain
+                                        knowledge obtained from the ORSD document is organized and structured into a
+                                        model by the
+                                        ontology developers. <a href="https://chowlk.linkeddata.es/chowlk_spec"
+                                                                target="_blank">Chowlk visual notation</a> provides a
+                                        set of recomendations for ontology diagrams representation.
+
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Ontology reuse</strong>: during this activity the term extraction is
+                                        carried out, by identifying basic concepts and the relationships
+                                        between those concepts are extracted. These extracted terms should consist of
+                                        not only the terms from the data source,
+                                        but also of synonyms of those terms. The terminology might be extracted from the
+                                        competency questions (<a
+                                            href="https://link.springer.com/book/10.1007/978-3-642-24794-1"
+                                            target="_blank">Guidelines from NeOn Methodology</a>) or from the data, for
+                                        what you might have domain expert advice.
+                                        These terms will be used during the ontology search with the aim of looking for
+                                        existing ontologies that best fit them.
+
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Encoding</strong>: during this activity, the ontology development team
+                                        generates computable models in the OWL
+                                        language from the ontology model. The ontology code resultant from this activity
+                                        includes metadata, such as creator, title, publisher,
+                                        license and version of the ontology.
+
+
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Evaluation</strong>: during this activity, the ontology developers
+                                        guarantee that the ontology does not have syntactic, modelling or semantic
+                                        errors and that the ontology fulfil all the requirements
+                                        scheduled for the ontology during the requirements specification activity.
+
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li>
+                                                <a href="http://www.ksl.stanford.edu/people/dlm/papers/ontology-tutorial-noy-mcguinness-abstract.html"
+                                                   target="_blank">Ontology Development 101: A Guide to Creating Your
+                                                    First Ontology</a></li>
+                                            <li><a href="http://www.w3.org/2001/sw/BestPractices/" target="_blank">Semantic
+                                                Web Best Practices and Deployment Working Group</a></li>
+                                            <li><a href="https://www.w3.org/TR/swbp-n-aryRelations/" target="_blank">Defining
+                                                N-ary Relations on the Semantic Web</a></li>
+                                            <li>Provide human readable documentation:
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.sciencedirect.com/science/article/pii/S1877042815056608"
+                                                           target="_blank">Lexicalizing Ontologies: The Issues Behind
+                                                            the Labels</a></li>
+                                                    <li>
+                                                        <a href="http://www.semantic-web-journal.net/content/multilingual-linked-data-patterns"
+                                                           target="_blank">Multilingual Linked Data Patterns</a></li>
+                                                </ul>
+                                            <li><a href="http://ebooks.iospress.nl/volumearticle/56005" target="_blank">Best
+                                                Practices for Implementing FAIR Vocabularies and Ontologies on the
+                                                Web</a> (open pre-print available <a
+                                                    href="https://arxiv.org/abs/2003.13084" target="_blank">in this
+                                                link</a>)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+                                <br>
+
+                                 <p>For further recommendations, resources, tips and tool recommendations check: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                                 </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="publication" class="tab-pane fade">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="resources/images/publication.png" class="figure-img img-fluid rounded"
+                                             height="90%" width="90%" alt="Ontology publication workflow.">
+                                        <figcaption class="figure-caption text-center">Ontology publication workflow
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p>The aim of the ontology publication process is to provide an online ontology
+                                    accessible both as a
+                                    human-readable documentation and a machine-readable file from its URI. The ontology
+                                    needs to be
+                                    evaluated before its publication to guarantee that is ready to be used. This
+                                    activity includes:
+                                <ul>
+                                    <li>
+                                        <strong>Documentation</strong>: the ontology development team in
+                                        collaboration with the domain experts generates the ontology documentation of
+                                        the release
+                                        candidate. This documentation includes an HTML description of the ontology which
+                                        describes the classes, properties and data
+                                        properties of the ontology, and the license URI and title being used. The domain
+                                        experts
+                                        have to collaborate with the ontology development team to describe the classes
+                                        and the
+                                        properties. This description also includes metadata, such as creator, publisher,
+                                        date of
+                                        creation, last modification or version number. The documentation also includes
+                                        diagrams which store the graphical representation of the ontology, including
+                                        taxonomy and
+                                        class diagrams.
+
+
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Publication</strong>: once the documentation of the ontology has been
+                                        generated, the ontology is published on the Web.
+                                        This online ontology is accessible via its namespace URI as a machine-readable
+                                        file and a human readable
+                                        documentation using content negotiation.
+
+                                    </li>
+                                </ul>
+                                </p>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+
+
+                                            <li><a href="https://www.w3.org/TR/swbp-vocab-pub/" target="_blank">Best
+                                                Practice Recipes for Publishing RDF Vocabularies</a></li>
+                                            <li>
+                                                <a href="https://linkingresearch.wordpress.com/2017/01/23/how-to-easily-publish-your-ontology-permanently-ontoolgy-and-w3id/"
+                                                   target="_blank">How to (easily) publish your ontology permanently:
+                                                    OnToolgy and w3id</a></li>
+                                            <li><a href="http://ebooks.iospress.nl/volumearticle/56005" target="_blank">Best
+                                                Practices for Implementing FAIR Vocabularies and Ontologies on the
+                                                Web</a> (open pre-print available <a
+                                                    href="https://arxiv.org/abs/2003.13084" target="_blank">in this
+                                                link</a>)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <br>
+
+                                 <p>For further recommendations, resources, tips and tool recommendations check: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="maintenance" class="tab-pane fade">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="resources/images/maintenance.png" class="figure-img img-fluid rounded"
+                                             height="90%" width="90%" alt="Ontology maintenance workflow.">
+                                        <figcaption class="figure-caption text-center">Ontology maintenance workflow
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p> The goal of this activity is to update and add new requirements to the ontology that
+                                    are not
+                                    identified in the ORSD, to identify and corrects errors or to schedule a new
+                                    iteration for ontology
+                                    development. During the ontology development process, the domain experts can propose
+                                    new
+                                    requirements or improvements over the ontology, as well as identify errors both in
+                                    the requirements and in the implementation. </p>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+
+                                            <li><a href="https://guides.github.com/features/issues/" target="_blank">GitHub
+                                                issue tracker</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <br>
+
+                                 <p>For further recommendations, resources, tips and tool recommendations check: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                                 </p>
+
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="complete-workflow">
+
+        <div class="container-fluid " style="background:#eeeeee !important">
+            <h2 style="text-align: center;">Complete methodology detailed view</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="text-center">
+                    <figure class="figure">
+                        <img src="resources/images/workflow-complete.png" class="figure-img img-fluid rounded"
+                             alt="Ontology implementation workflow.">
+                        <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
+                        <br>
+                    </figure>
+                </div>
+                <p class="text-center"><strong>The LOT methodology figures are available for reuse in the <a
+                        href="https://github.com/oeg-upm/LOT-resources/tree/master/figures" target="_blank">LOT Github
+                    repository</a> under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    Creative Commons Attribution Non Commercial Share Alike license</a>. </strong></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Add section casos de tools -->
+
+    <section id="tools">
+
+        <div class="container-fluid ">
+            <h2 style="text-align: center;">Tools</h2>
+            <div class="text-center">
+                <figure class="figure">
+
+                    <img src="resources/images/tools.png" class="figure-img img-fluid rounded" border="0"
+                         usemap="#map2"/>
+
+                    <map name="map2">
+                        <area shape="rect" coords="382,49,494,131" href="http://oops.linkeddata.es/"/>
+                        <area shape="rect" coords="376,177,490,264" href="https://github.com/dgarijo/Widoco"/>
+                        <area shape="rect" coords="377,305,475,395" href="https://github.com/idafensp/ar2dtool"/>
+                        <area shape="rect" coords="373,439,488,517" href="https://github.com/dgarijo/vocabLite"/>
+                        <area shape="rect" coords="377,574,494,652" href="https://themis.linkeddata.es/"/>
+                        <area shape="rect" coords="382,699,477,784" href="https://coralcorpus.linkeddata.es/"/>
+                        <area shape="rect" coords="369,833,500,904" href="https://chowlk.linkeddata.es/"/>
+                    </map>
+                    <figcaption class="figure-caption text-center">Tools and resources developed by OEG</figcaption>
+                    <br>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Add section casos de exito -->
+    <section id="stories">
+        <div class="container-fluid" style="background:#eeeeee " >
+
+            <h2 style="text-align: center;">Success stories</h2>
+            <div class="album py-12 col-md-12">
+                <div class="container ">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+
+                        <div class="col-md-4 d-flex">
+                            <div class="card mb-4 box-shadow flex-fill" >
+                                <a href="https://www.vicinity2020.eu"><img class="card-img-top img-responsive" src="resources/images/logo-vicinity.png" alt="VICINITY" ></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">VICINITY is an EU funded project under Horizon 2020. It proposes a platform and ecosystem that provides "interoperability as a service" for infrastructures in the Internet of Things.</p>
+
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="http://vicinity.iot.linkeddata.es/">View details &raquo;</a>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex "             >
+                            <div class="card mb-4 box-shadow flex-fill">
+                                <a href="https://delta-h2020.eu/"><img class="card-img-top img-responsive" src="resources/images/logo-delta.jpg" alt="DELTA"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">DELTA is an EU funded project under Horizon 2020. It proposes a demand-response management platform that introduces scalability and adaptiveness into the Aggregator’s DR toolkits. </p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="http://delta.iot.linkeddata.es/">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex "             >
+                            <div class="card mb-4 box-shadow flex-fill">
+                                <a href="https://delta-h2020.eu/"><img class="card-img-top img-responsive" src="resources/images/logo-bimerr.jpg" alt="BIMERR" width="275" height="120"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">BIMERR is a EU funded project which aims to provide a suite of interoperable tools to support AEC stakeholders throughout the energy efficiency renovation process of existing buildings.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://bimerr.iot.linkeddata.es">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex "             >
+                            <div class="card mb-4 box-shadow flex-fill">
+                                <a href="https://ciudadesabiertas.es"><img class="card-img-top img-responsive" src="resources/images/logoCA.svg" alt="Ciudades Abiertas"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">Ciudades Abiertas is a Spanish project where several cities  are working together in the creation of a shared set of ontologies that can be used to provide homogeneous open data in their open data portals and APIs. </p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://ciudadesabiertas.es/vocabularios/#Cat%C3%A1logo">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card mb-4 box-shadow flex-fill" >
+                                <a href="https://easytvproject.eu:3001/"> <img class="card-img-top img-responsive" src="resources/images/logo-easytv.PNG" alt="EasyTV"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">EasyTV is a H2020 European project which main goal is to provide equal access to television and audio-visual services to  that all users, especially persons with disabilities and users with special needs.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://w3id.org/def/easytv">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex "             >
+                            <div class="card mb-4 box-shadow flex-fill">
+                                <a href="http://ceumass.eps.uspceu.es/"><img class="card-img-top img-responsive" src="resources/images/massmed.JPG" alt="Mass Mediator"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">CEU Mass Mediator is a tool for searching metabolites in different databases (Kegg, HMDB, LipidMaps, Metlin, MINE and an in-house library). This is specially designed for searches through experimental masses obtained from mass spectrometry techniques.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="http://ceumass.eps.uspceu.es/">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex "             >
+                            <div class="card mb-4 box-shadow flex-fill">
+                                <a href="https://datos.ign.es/"><img class="card-img-top img-responsive" src="resources/images/btn100.png" alt="BTN100 ontology"></a>
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">Base Topográfica Nacional 1:100.000 (BTN100) is a data catalogue of geographical data grouped by different areas, such as  administrative units, protected areas, relief and hydrography. </p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://datos.ign.es/">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The <a href="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/contaminacion-acustica">noise ontology</a> was created to  represent the acoustic pollution data collected by measurement stations located in cities, providing a common model for data publication.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://link.springer.com/article/10.1007%2Fs12652-019-01561-2">Read paper &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow ">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The <a href="https://w3id.org/def/caso#">Context-Aware System Ontology</a> and the <a href="https://w3id.org/def/irrig#">Irrigation ontology </a>are ontologies developed by the INRAE center of Clermont Auvergne Rhone-Alpes, France, in collaboration with OEG-UPM thanks to the ``WOW! Program Wide Open to the World - CAP 20-25 Visiting Scholar Fellowship''</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://doi.org/10.3390/app10051803">Read paper &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow ">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The <a href="https://saref.etsi.org/saref4inma/v1.1.2/">SAREF4INMA ontology </a> was created as an extension of the SAREF ontology for the industry and manufacturing domain.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="http://semantic-web-journal.org/system/files/swj2466.pdf">Read paper &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow ">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The <a href="https://gitlab.irstea.fr/copain/phenologicalstages">BBCH-based Plant Phenological Description Ontology </a> was developed in the context of the "Data to Knowledge in Agronomy and Biodiversity" and encondes the BBCH generic scale  and each crop specific scales aligned one another.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://hal.archives-ouvertes.fr/hal-02996846">Read paper &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow ">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The REACT Ontology, which is about renewable energy generation and storage, was developed in the context of the Horizon 2020 REACT project (grant agreement no. 824395).</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://w3id.org/react">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ">
+                            <div class="card mb-4 box-shadow ">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">The FOO: An Upper-Level Ontology for the Forest Observatory comprises a novel upper-level ontology that integrates wildlife data generated by sensors from the tropical forest of Sabah.</p>
+                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="ttps://www.ontology.forest-observatory.org
+">View details &raquo;</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center"><strong>A more detailed description of how these projects applied LOT can be downloaded <a href="data/LOTprojects.xlsx">here.</a></strong></p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="cite">
+
+        <div class="container-fluid" style="background:#ffffff">
+            <h2 style="text-align: center;">How to cite </h2>
+            <div class="col-md-10 col-md-offset-1">
+
+
+                <div class="text-center">
+                    <p>If you are using the content of this website you must cite us as: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                    </p> <br>
+                </div>
+
+                
+                <!-- <div class="text-center">
+                    <p>If you are using the content of this website you must cite us as: <i>María Poveda Villalón, Alba
+                        Fernández Izquierdo, & Raúl García Castro. (2019, January 14). Linked Open Terms (LOT)
+                        Methodology (Version 1.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.2539305">10.5281/zenodo.2539305 </a></i>
+                    </p> <br>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small blue" style="background:#eeeeee !important">
+
+        <div class=" text-center">
+            <strong> To check the previous version of LOT click <a href="http://lot.linkeddata.es/v1">here</a></strong>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> 2020 Ontological Engineering Group (OEG)
+            <p>Contact email: lot(at)delicias.dia.fi.upm.es. Latest revision April 2024</p>
+
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                    alt="Licencia de Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a><br/>The content on this website
+            is available to share and use under the <a rel="license"
+                                                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Creative Commons Attribution Non Commercial Share Alike license </a>.
+        </div>
+
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</div>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="index_files/bootstrap-transition.js"></script>
+<script src="index_files/bootstrap-alert.js"></script>
+<script src="index_files/bootstrap-modal.js"></script>
+<script src="index_files/bootstrap-dropdown.js"></script>
+<script src="index_files/bootstrap-tab.js"></script>
+<script src="index_files/bootstrap-tooltip.js"></script>
+<script src="index_files/bootstrap-popover.js"></script>
+<script src="index_files/bootstrap-button.js"></script>
+<script src="index_files/bootstrap-collapse.js"></script>
+<script src="index_files/bootstrap-carousel.js"></script>
+<script src="index_files/bootstrap-typeahead.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+
+
+</body>
+</html>

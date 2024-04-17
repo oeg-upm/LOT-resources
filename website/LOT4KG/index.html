@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>LOT - Linked Open Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="../index_files/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../index_files/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Le styles -->
+    <link href="../index_files/bootstrapLOT.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding: 65px 0 0 0;
+            position: relative;
+            height: 100%;
+
+        }
+
+    </style>
+    <!--  <link href="../index_files/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+        $(document).ready(function () {
+            $("#impl").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#implli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#implementation').addClass('in active');
+            });
+            $("#reqs").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#reqsli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#requirements').addClass('in active');
+            });
+            $("#maint").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#maintli').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#maintenance').addClass('in active');
+            });
+            $("#publi").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#publili').addClass('active');
+                $('.tab-pane.fade.in.active').removeClass('in active');
+                $('#publication').addClass('in active');
+            });
+        });
+
+    </script>
+    <!-- Fav and touch icons -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137960511-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137960511-1');
+    </script>
+
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="logo" src="../resources/images/lot.png" width="20%" height="20%">
+        </div>
+        &nbsp;&nbsp;
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#details">Activities</a></li>
+           <!-- <li><a href="#stories">Stories</a></li>
+            <li><a href="#cite">How to cite </a></li>-->
+        </ul>
+    </div>
+
+</nav>
+
+
+<div class="container-fluid">
+
+
+    <section id="intro">
+
+        <!-- Jumbotron -->
+        <div class="container-fluid  hero-unit">
+
+            <h1 style="text-align: center">LOT4KG</h1>
+            <h2 style="text-align: center">LOT for Knowlege Graphs Construction</h2>
+
+            <br>
+            <div class="container">
+                <div class="row">
+                    <p style="text-align: center">LOT4KG is methodology for KG lifecycle that extends the LOT ontology engineering methodology 
+                        with KG construction, ontology evolution and the subsequent KG evolution.</p>
+                </div>
+            </div>
+
+
+            <!-- Workflow  -->
+
+            <div class="container-fluid">
+                <div class="text-center">
+                    <img src="../resources/images/LOT4KG/LOT4KGoverview.png" 
+                        class="figure-img img-fluid rounded" 
+                        height="65%" width="65%" usemap="#map"
+                         alt="LOT4KG workflow.">
+                    <!-- <map name="map">
+                        <area shape="rect" coords="1,49,122,107" href="#requirements"/>
+                        <area shape="rect" coords="152,47,267,109" href="#implementation"/>
+                        <area shape="rect" coords="299,46,422,107" href="#publication"/>
+                        <area shape="rect" coords="463,49,580,109" href="#maintenance"/>
+                    </map>-->
+                </div>
+                <br>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Details -->
+    <section id="details">
+        <div class="container-fluid" id="tabs">
+            <h2 style="text-align: center;">LOT4KG extensions detailed view</h2>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav nav-tabs">
+                        <li class="active" id="reqsli">
+                            <a data-toggle="tab" href="#ontologylifecycle">Ontology Lifecycle Extension</a>
+                        </li>
+                        <li id="implli">
+                            <a data-toggle="tab" href="#kgengineering">Knowledge Graph Engineering Extension</a>
+                        </li>
+                        <li id="publili">
+                            <a data-toggle="tab" href="#kglifecycle">Knowledge Graph Lifecycle Extension</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="panel-body">
+            <div class="tab-content">
+                <div id="ontologylifecycle" class="tab-pane fade in active ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="../resources/images/LOT4KG/LOT-evo-detailed.png"
+                                             class="figure-img img-fluid rounded" height="90%" width="90%"
+                                             alt="Requirements specification workflow.">
+                                        <figcaption class="figure-caption text-center">LOT evolution
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p>
+                                    ....
+                                </p>
+                                <p>
+                                    ....
+                                </p>
+                              
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="kgengineering" class="tab-pane fade ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kg.png"
+                                             class="figure-img img-fluid rounded" height="90%" width="90%"
+                                             alt="Ontology implementation workflow.">
+                                        <figcaption class="figure-caption text-center">Title here!!!!!!!
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p> ... 
+
+                                </p>
+                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="kglifecycle" class="tab-pane fade">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="text-center">
+                                    <figure class="figure">
+                                        <img src="../resources/images/LOT4KG/publication.png" class="figure-img img-fluid rounded"
+                                             height="90%" width="90%" alt="Ontology publication workflow.">
+                                        <figcaption class="figure-caption text-center">TITLE!!!!!
+                                        </figcaption>
+                                        <br>
+                                    </figure>
+                                </div>
+                                <p>....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="complete-workflow">
+
+        <div class="container-fluid " style="background:#eeeeee !important">
+            <h2 style="text-align: center;">Complete LOT4KG methodology detailed view</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <p> Coming soon...</p>
+               <!-- <div class="text-center">
+                    <figure class="figure">
+                        <img src="../resources/images/workflow-complete.png" class="figure-img img-fluid rounded"
+                             alt="Ontology implementation workflow.">
+                        <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
+                        <br>
+                    </figure>
+                </div> -->
+                <p class="text-center"><strong>The LOT methodology figures are available for reuse in the <a
+                        href="https://github.com/oeg-upm/LOT-resources/tree/master/figures" target="_blank">LOT Github
+                    repository</a> under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    Creative Commons Attribution  Share Alike license</a>. </strong></p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="cite">
+
+        <div class="container-fluid" style="background:#ffffff">
+            <h2 style="text-align: center;">How to cite </h2>
+            <div class="col-md-10 col-md-offset-1">
+
+
+                <div class="text-center">
+                    <p>If you are using the content of LOT4KG mehtodology you should cite: <i>XXXXXX</a></i>
+                    </p>
+                    <p>If you are using the content of LOT mehtodology you should cite: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                    </p> <br>
+                </div>
+
+                
+                <!-- <div class="text-center">
+                    <p>If you are using the content of this website you must cite us as: <i>María Poveda Villalón, Alba
+                        Fernández Izquierdo, & Raúl García Castro. (2019, January 14). Linked Open Terms (LOT)
+                        Methodology (Version 1.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.2539305">10.5281/zenodo.2539305 </a></i>
+                    </p> <br>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small blue" style="background:#eeeeee !important">
+
+        <div class=" text-center">
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> 2024 Ontological Engineering Group (OEG) & Knowledge Graph Construction Working Group
+            <p>Contact email: lot(at)delicias.dia.fi.upm.es. Latest revision April 2024</p>
+
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                    alt="Licencia de Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a><br/>The content on this website
+            is available to share and use under the <a rel="license"
+                                                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Creative Commons Attribution Non Commercial Share Alike license </a>.
+        </div>
+
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</div>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../index_files/bootstrap-transition.js"></script>
+<script src="../index_files/bootstrap-alert.js"></script>
+<script src="../index_files/bootstrap-modal.js"></script>
+<script src="../index_files/bootstrap-dropdown.js"></script>
+<script src="../index_files/bootstrap-tab.js"></script>
+<script src="../index_files/bootstrap-tooltip.js"></script>
+<script src="../index_files/bootstrap-popover.js"></script>
+<script src="../index_files/bootstrap-button.js"></script>
+<script src="../index_files/bootstrap-collapse.js"></script>
+<script src="../index_files/bootstrap-carousel.js"></script>
+<script src="../index_files/bootstrap-typeahead.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+
+
+</body>
+</html>
