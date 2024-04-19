@@ -177,7 +177,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT-evo-detailed.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-ontolifecycle.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Requirements specification workflow.">
                                         <figcaption class="figure-caption text-center">LOT evolution
@@ -186,12 +186,15 @@
                                     </figure>
                                 </div>
                                 <p>
-                                    ....
+                                    <b>Change Analysis.</b>The goal of this activity is to formally capture the changes that are to be implemented. The output of this sub-activity is a list of formalised changes. During the change evaluation activity, the formalised changes are evaluated against the ontology, to ensure that the ontology remains consistent and coherent. Therefore, this activity requires the list of formalised changes for the evaluation to be executed and outputs an evaluation report.
                                 </p>
+                                <br>
                                 <p>
-                                    ....
+                                     <b>Ontology Update.</b> In the first sub-activity of ontology update, a change is encoded (change encoding). In this activity, an engineer applies the necessary formalised changes to the ontology, similarly to the ontology encoding sub-activity within the high-level ontology implementation activity. The output of this activity is a new ontology in code format (ontology code).
+
+                                     
                                 </p>
-                              
+                           
 
                             </div>
                         </div>
@@ -204,15 +207,49 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kg.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kglifecycle.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Ontology implementation workflow.">
-                                        <figcaption class="figure-caption text-center">Title here!!!!!!!
+                                        <figcaption class="figure-caption text-center">Knowledge Graph Engineering
                                         </figcaption>
                                         <br>
                                     </figure>
                                 </div>
-                                <p> ... 
+                                <p> 
+
+                                    <b>Knowledge Graph Implementation.</b>  The knowledge graph implementation activity aims to construct and validate the knowledge graph. It is composed by a set of sub-activities that transform the input data, which can be of any type and format (e.g., tabular in CSV, text in PDF, etc.), into the knowledge graph and its later validation over a set of constraints. The output of this activity is the implemented knowledge graph (virtual or materialized) and the associated rules for constructing (e.g., RML, SPARQL-Anything, etc.) and validating it (e.g., ShEx or SHACL shapes). The latter may also include a validation report as output.
+
+                                     <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li><a href="https://www.w3.org/TR/r2rml/" target="_blank">R2RML: RDB to RDF Mapping Language</a></li>
+                                            <li><a href="https://w3id.org/rml/portal" target="_blank">RML: RDF Mapping Language</a></li>
+                                            <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL: Shapes Constraint Language</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <p>
+                                    <b>Knowledge Graph Publication.</b> The high-level KG publication activity is a counterpart to the ontology publication activity. It captures the necessary tasks and steps which are taken to document and make the KG available online. The output of this activity is the documented KG and the online accessible resource. The lower-level activities part of the KG publication are documentation and data publication. During the documentation step, the mappings, RDF data, SHACL shapes and validation report are used to document the process and output of the implementation. The output is the HTML documentation, which can then be published during the data publication step alongside the online KG.
+
+                                     <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li><a href="https://doi.org/10.1007/978-3-030-62466-8_4" target="_blank">OBA: An ontology-based framework for creating REST APIs for knowledge graph</a></li>
+                                            <li><a href="https://doi.org/10.1007/s00778-021-00711-3" target="_blank">A survey of RDF stores & SPARQL engines for querying knowledge graphs</a></li>
+                                            <li><a href="https://github.com/oeg-upm/rmldoc" target="_blank">RMLdoc: Human-readable documentation for RML Mappings</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    </ul>
+
+                                </p>
+                                 <br>
+                                 <p>
+                                    <b>Knowledge Graph Maintenance.</b> This task is modelled along the same lines as the ontology maintenance task. It is specifically aimed at fixing bugs in the already published KG. This step does not capture proper evolution, the changes within the ontology or the data sources. Therefore, the detailed activity is named bug detection. The output of the activity is the issues and bugs to be fixed by backtracking in the process.
+
+                                     
 
                                 </p>
                     
@@ -228,14 +265,37 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/publication.png" class="figure-img img-fluid rounded"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-evo-detailed.png" class="figure-img img-fluid rounded"
                                              height="90%" width="90%" alt="Ontology publication workflow.">
-                                        <figcaption class="figure-caption text-center">TITLE!!!!!
+                                        <figcaption class="figure-caption text-center">Knowledge Graph and Ontology Evolution
                                         </figcaption>
                                         <br>
                                     </figure>
                                 </div>
-                                <p>....
+                                <p>
+
+                                <b>Change Detection and Impact Analysis Step</b>. To be able to update an already existing KG, the changes applied to the ontology need to be examined and analysed against the KG. We define three sub-activities: detect delta, refine relevant changes and analyse change impact. However, only the middle activity is mandatory. The main output of this activity is a list of relevant changes, relevant for the update of the KG.
+
+                                    <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li><a href="https://doi.org/10.1016/j.jbi.2012.04.009" target="_blank">COnto–Diff: generation of complex evolution mappings for life science ontologies</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <p>
+                                <b>Knowledge Graph Update</b>. This activity, just as the one for updating the ontology, serves as a mirror to the KG implementation activity. Its purpose is to bring the KG up to date with regards to any types of changes in the ontology or source data. Hence, the KG update activity can be triggered from the change detection activities which provide the list of ontology changes, or from changes to the source data, depicted by the arrow connecting the KG maintenance activity with KG update. The KG update activity has four sub-activities that make it possible to update the KG, each of them associated with the corresponding assets of the KG implementation (mappings, RDF graph, constraints and validation report). The high-level output is the updated RDF graph and its associated assets (i.e. mappings, data constraints, and validation report), which are to be published using the KG publishing activity.
+
+                                    <ul class="list-unstyled">
+                                    <li><strong>Recommended reads:</strong>
+                                        <ul>
+                                            <li><a href="https://openreview.net/pdf?id=ONL4LGlHNu" target="_blank">Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs</a></li>
+                                            <li><a href="https://www.semantic-web-journal.net/content/incrml-incremental-knowledge-graph-construction-heterogeneous-data-sources" target="_blank">IncRML: Incremental Knowledge Graph Construction from Heterogeneous Data Sources</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -261,7 +321,7 @@
                         <br>
                     </figure>
                 </div> -->
-                <p class="text-center"><strong>The LOT methodology figures are available for reuse in the <a
+                <p class="text-center"><strong>The LOT4KG methodology figures are available for reuse in the <a
                         href="https://github.com/oeg-upm/LOT-resources/tree/master/figures" target="_blank">LOT Github
                     repository</a> under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                     Creative Commons Attribution  Share Alike license</a>. </strong></p>
@@ -281,7 +341,7 @@
 
 
                 <div class="text-center">
-                    <p>If you are using the content of LOT4KG mehtodology you should cite: <i>XXXXXX</a></i>
+                    <p>If you are using the content of LOT4KG mehtodology you should cite: <i>Romana Pernisch, David Chaves-Fraga, María Poveda-Villalón, Lise Stork, and Diego Conde-Herreros. LOT4KG: A Joint Methodology for the Ontology and Knowledge Graph Lifecycle. Under Review (ISWC2024).</i>
                     </p>
                     <p>If you are using the content of LOT mehtodology you should cite: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
                     </p> <br>
@@ -303,7 +363,7 @@
         <div class=" text-center">
         </div>
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3"> 2024 Ontological Engineering Group (OEG) & Knowledge Graph Construction Working Group
+        <div class="footer-copyright text-center py-3"> 2024 Ontological Engineering Group (OEG) & W3C Knowledge Graph Construction Community Group
             <p>Contact email: lot(at)delicias.dia.fi.upm.es. Latest revision April 2024</p>
 
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
