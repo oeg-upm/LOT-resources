@@ -93,8 +93,8 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#details">Activities</a></li>
-           <!-- <li><a href="#stories">Stories</a></li>
-            <li><a href="#cite">How to cite </a></li>-->
+           <!-- <li><a href="#stories">Stories</a></li>-->
+            <li><a href="#cite">How to cite </a></li>
         </ul>
     </div>
 
@@ -147,7 +147,7 @@
     <!--Details -->
     <section id="details">
         <div class="container-fluid" id="tabs">
-            <h2 style="text-align: center;">LOT4KG extensions detailed view</h2>
+            <h2 style="text-align: center;">LOT4KG Extensions detailed view</h2>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <ul class="nav nav-tabs">
@@ -159,8 +159,7 @@
                         </li>
                         <li id="publili">
                             <a data-toggle="tab" href="#kglifecycle">Knowledge Graph Lifecycle Extension</a>
-                        </li>
-                        
+                        </li>    
                     </ul>
                 </div>
 
@@ -177,7 +176,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-ontolifecycle.png"
+                                        <img src="../resources/images/LOT4KG/change_anal-onto_update.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Requirements specification workflow.">
                                         <figcaption class="figure-caption text-center">LOT evolution
@@ -186,15 +185,59 @@
                                     </figure>
                                 </div>
                                 <p>
-                                    <b>Change Analysis.</b>The goal of this activity is to formally capture the changes that are to be implemented. The output of this sub-activity is a list of formalised changes. During the change evaluation activity, the formalised changes are evaluated against the ontology, to ensure that the ontology remains consistent and coherent. Therefore, this activity requires the list of formalised changes for the evaluation to be executed and outputs an evaluation report.
+                                    <b>Change Analysis.</b>The goal of this activity is to formally capture the changes that are to be implemented. The output of this sub-activity is a list of formalised changes. During the change evaluation activity, the formalised changes are evaluated against the ontology, to ensure that the ontology remains consistent and coherent, taking
+                                    them as input and producing an evaluation report as output . Therefore, this activity requires the list of formalised changes for the evaluation to be executed and outputs an evaluation report.
+                                </p>
+                                <p>
+                                    <b>Recommended Tools:</b>
+                                    <ul>
+                                        <li><strong>Conceptualization:</strong>
+                                            <ul>
+                                                <li><a href="https://www.microsoft.com/es-es/microsoft-365/microsoft-whiteboard/digital-whiteboard-app" target="_blank">Microsoft Whiteboard</a> - The visual collaboration canvas in Microsoft 365 for flexible work and learning.</li>
+                                                <li><a href="https://chowlk.linkeddata.es/notation.html" target="_blank">Chowlk</a> - A set of recommendations for ontology diagrams representation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>
+                                                <li><a href="https://app.diagrams.net/" target="_blank">Diagrams</a> - A free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.</li>
+                                                <li><a href="https://www.jarrar.info/publications/JM08.v7.pdf" target="_blank">DOGMA</a> - A methodological framework for ontology engineering.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Evaluation:</strong>
+                                            <ul>
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </p>
                                 <br>
                                 <p>
-                                     <b>Ontology Update.</b> In the first sub-activity of ontology update, a change is encoded (change encoding). In this activity, an engineer applies the necessary formalised changes to the ontology, similarly to the ontology encoding sub-activity within the high-level ontology implementation activity. The output of this activity is a new ontology in code format (ontology code).
-
-                                     
+                                     <b>Ontology Update.</b> In the first sub-activity of ontology update, a change is encoded (change encoding). In this activity, an engineer applies the necessary formalised changes to the ontology, similarly to the ontology encoding sub-activity within the high-level ontology implementation activity. The output of this activity is a new ontology in code format (ontology code). Then the ontology is evaluated before being published.      
                                 </p>
-                           
+                                <p>
+                                    <b>Recommended Tools:</b>
+                                    <ul>
+                                        <li><strong>Change Encoding:</strong>
+                                            <ul>
+                                                <li><a href="https://github.com/dgarijo/Widoco" target="_blank">Widoco</a> - A wizard for documenting ontologies.</li>                                                
+                                                <li><a href="https://chowlk.linkeddata.es/notation.html" target="_blank">Chowlk</a> - A set of recommendations for ontology diagrams representation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>
+                                                <li><a href="https://app.diagrams.net/" target="_blank">Diagrams</a> - A free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Ontology Evaluation:</strong>
+                                            <ul>
+                                                <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://oops.linkeddata.es/" target="_blank">OOPS!</a> - An on-line tool for ontology evaluation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>                                                
+                                                <li><a href="https://rdfshape.weso.es/" target="_blank">RDFShape</a> - A playground for RDF data conversion, validation and visualization, among other features.</li>                                                
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
 
                             </div>
                         </div>
@@ -312,15 +355,14 @@
         <div class="container-fluid " style="background:#eeeeee !important">
             <h2 style="text-align: center;">Complete LOT4KG methodology detailed view</h2>
             <div class="col-md-10 col-md-offset-1">
-                <p> Coming soon...</p>
-               <!-- <div class="text-center">
+                <div class="text-center">
                     <figure class="figure">
-                        <img src="../resources/images/workflow-complete.png" class="figure-img img-fluid rounded"
+                        <img src="../resources/images/LOT4KG/LOT4KG-V7-green.drawio.png" class="figure-img img-fluid rounded"
                              alt="Ontology implementation workflow.">
                         <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
                         <br>
                     </figure>
-                </div> -->
+                </div> 
                 <p class="text-center"><strong>The LOT4KG methodology figures are available for reuse in the <a
                         href="https://github.com/oeg-upm/LOT-resources/tree/master/figures" target="_blank">LOT Github
                     repository</a> under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
