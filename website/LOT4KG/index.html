@@ -179,7 +179,7 @@
                                         <img src="../resources/images/LOT4KG/change_anal-onto_update.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Requirements specification workflow.">
-                                        <figcaption class="figure-caption text-center">LOT evolution
+                                        <figcaption class="figure-caption text-center">Ontology Lifecycle Extension Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
@@ -253,7 +253,7 @@
                                         <img src="../resources/images/LOT4KG/KG_Engineering_Ext.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Ontology implementation workflow.">
-                                        <figcaption class="figure-caption text-center">Knowledge Graph Engineering
+                                        <figcaption class="figure-caption text-center">Knowledge Graph Engineering Extension Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
@@ -402,7 +402,7 @@
                                     <ul>
                                         <li><strong>Bug Detection:</strong>
                                             <ul>
-                                                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system[9] that tracks versions of files.</li>
+                                                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system that tracks versions of files.</li>
                                                 <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
                                                 <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
                                                 <li><a href="https://airflow.apache.org/" target="_blank">Apache airflow</a> - A web-based corporate wiki .</li>
@@ -429,15 +429,14 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kglifecycle.png" class="figure-img img-fluid rounded"
+                                        <img src="../resources/images/LOT4KG/KG_Lifecycle_Extensions.drawio.png" class="figure-img img-fluid rounded"
                                              height="90%" width="90%" alt="Ontology publication workflow.">
-                                        <figcaption class="figure-caption text-center">Knowledge Graph and Ontology Evolution
+                                        <figcaption class="figure-caption text-center">Knowledge Graph Lifecycle Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
                                 </div>
                                 <p>
-
                                 <b>Change Detection and Impact Analysis Step</b>. To be able to update an already existing KG, the changes applied to the ontology need to be examined and analysed against the KG. We define two sub-activities: detect delta (optional) and assess change impact.  The main output of this activity is a list of relevant changes, relevant for the update of the KG.
 
                                     <ul class="list-unstyled">
@@ -446,6 +445,18 @@
                                             <li><a href="https://doi.org/10.1016/j.jbi.2012.04.009" target="_blank">COnto–Diff: generation of complex evolution mappings for life science ontologies</a></li>
                                         </ul>
                                     </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <b>Recommended Tools:</b>
+                                    <ul>
+                                        <li><strong>Delta Detection:</strong>
+                                            <ul>
+                                                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system that tracks versions of files.</li>
+                                                <li><a href="https://www.man7.org/linux/man-pages/man1/diff.1.html" target="_blank">UNIX Diff</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </p>
                                 <br>
@@ -459,6 +470,42 @@
                                             <li><a href="https://www.semantic-web-journal.net/content/incrml-incremental-knowledge-graph-construction-heterogeneous-data-sources" target="_blank">IncRML: Incremental Knowledge Graph Construction from Heterogeneous Data Sources</a></li>
                                         </ul>
                                     </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <b>Recommended Tools:</b>
+                                    <ul>
+                                        <li><strong>Mappings Update:</strong>
+                                            <ul>
+                                                <li><a href="https://rml.io/yarrrml/" target="_blank">YARRRML</a> - A human readable text-based representation for declarative Linked Data generation rules.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/citiususc/yatter" target="_blank">Yatter</a> - A tool for translating mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Transformation:</strong>
+                                            <ul>
+                                                <li><a href="https://github.com/morph-kgc" target="_blank">Morph-KGC</a> - An engine that constructs RDF knowledge graphs from heterogeneous data sources with the R2RML and RML mapping languages.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Constraints Update:</strong>
+                                            <ul>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Validation:</strong>
+                                            <ul>
+                                                <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://github.com/RDFLib/pySHACL" target="_blank">pySHACL</a> - A Python validator for SHACL.</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+
+                                            </ul>
+                                        </li>                                         
                                     </ul>
                                 </p>
                             </div>
