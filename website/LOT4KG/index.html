@@ -94,6 +94,7 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#details">Activities</a></li>
            <!-- <li><a href="#stories">Stories</a></li>-->
+            <li><a href="#video">Video</a></li>
             <li><a href="#cite">How to cite </a></li>
         </ul>
     </div>
@@ -125,7 +126,7 @@
 
             <div class="container-fluid">
                 <div class="text-center">
-                    <img src="../resources/images/LOT4KG/LOT4KG-V7_Overview.drawio.png" 
+                    <img src="../resources/images/LOT4KG/LOT4KG-V8_Overview.drawio.png" 
                         class="figure-img img-fluid rounded" 
                         height="65%" width="65%" usemap="#map"
                          alt="LOT4KG workflow.">
@@ -176,7 +177,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-V7_viewdetail1.drawio.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_viewdetail1.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Requirements specification workflow.">
                                         <figcaption class="figure-caption text-center">Ontology Evolution Extension Workflow
@@ -197,7 +198,7 @@
                                                 <li><a href="https://chowlk.linkeddata.es/notation.html" target="_blank">Chowlk</a> - A set of recommendations for ontology diagrams representation.</li>
                                                 <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>
                                                 <li><a href="https://app.diagrams.net/" target="_blank">Diagrams</a> - A free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.</li>
-                                                <li><a href="https://www.jarrar.info/publications/JM08.v7.pdf" target="_blank">DOGMA</a> - A methodological framework for ontology engineering.</li>
+                                                <li><a href="https://www.jarrar.info/publications/JM08.V8.pdf" target="_blank">DOGMA</a> - A methodological framework for ontology engineering.</li>
                                                 <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
                                             </ul>
                                         </li>
@@ -250,7 +251,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-V7_Viewdetail2.drawio.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_Viewdetail2.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Ontology implementation workflow.">
                                         <figcaption class="figure-caption text-center">Knowledge Graph Engineering Extension Workflow
@@ -429,7 +430,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-V7_Viewdetail3.drawio.png" class="figure-img img-fluid rounded"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_Viewdetail3.drawio.png" class="figure-img img-fluid rounded"
                                              height="90%" width="90%" alt="Ontology publication workflow.">
                                         <figcaption class="figure-caption text-center">Knowledge Graph Lifecycle Workflow
                                         </figcaption>
@@ -525,7 +526,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="text-center">
                     <figure class="figure">
-                        <img src="../resources/images/LOT4KG/LOT4KG-V7-green.drawio.png" class="figure-img img-fluid rounded"
+                        <img src="../resources/images/LOT4KG/LOT4KG-V8-green.drawio.png" class="figure-img img-fluid rounded"
                              alt="Ontology implementation workflow.">
                         <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
                         <br>
@@ -541,7 +542,28 @@
 
     </section>
 
+    <section id="video">
+        <div class="container-fluid" style="background:#f9f9f9">
+            <h2 style="text-align: center;">Video Explanation</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="text-center">
+                    <p>Watch a video explanation of the LOT4KG methodology:</p>
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-bottom:20px;">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rZDZJ6ikzW4" allowfullscreen title="LOT4KG Methodology Video"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        $(document).ready(function () {
+            $("#videoNav").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#videoNavLi').addClass('active');
+            });
+        });
+    </script>
 
     <section id="cite">
 
