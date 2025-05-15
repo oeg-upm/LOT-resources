@@ -93,8 +93,10 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#details">Activities</a></li>
-           <!-- <li><a href="#stories">Stories</a></li>
-            <li><a href="#cite">How to cite </a></li>-->
+           <!-- <li><a href="#stories">Stories</a></li>-->
+            <li><a href="#video">Video</a></li>
+            <li><a href="#survey">Survey</a></li>            
+            <li><a href="#cite">How to cite </a></li>
         </ul>
     </div>
 
@@ -125,7 +127,7 @@
 
             <div class="container-fluid">
                 <div class="text-center">
-                    <img src="../resources/images/LOT4KG/LOT4KGoverview.png" 
+                    <img src="../resources/images/LOT4KG/LOT4KG-V8_Overview.drawio.png" 
                         class="figure-img img-fluid rounded" 
                         height="65%" width="65%" usemap="#map"
                          alt="LOT4KG workflow.">
@@ -147,7 +149,7 @@
     <!--Details -->
     <section id="details">
         <div class="container-fluid" id="tabs">
-            <h2 style="text-align: center;">LOT4KG extensions detailed view</h2>
+            <h2 style="text-align: center;">LOT4KG Extensions detailed view</h2>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <ul class="nav nav-tabs">
@@ -159,8 +161,7 @@
                         </li>
                         <li id="publili">
                             <a data-toggle="tab" href="#kglifecycle">Knowledge Graph Lifecycle Extension</a>
-                        </li>
-                        
+                        </li>    
                     </ul>
                 </div>
 
@@ -177,24 +178,68 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-ontolifecycle.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_viewdetail1.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Requirements specification workflow.">
-                                        <figcaption class="figure-caption text-center">LOT evolution
+                                        <figcaption class="figure-caption text-center">Ontology Evolution Extension Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
                                 </div>
                                 <p>
-                                    <b>Change Analysis.</b>The goal of this activity is to formally capture the changes that are to be implemented. The output of this sub-activity is a list of formalised changes. During the change evaluation activity, the formalised changes are evaluated against the ontology, to ensure that the ontology remains consistent and coherent. Therefore, this activity requires the list of formalised changes for the evaluation to be executed and outputs an evaluation report.
+                                    <b>Change Analysis.</b>The goal of this activity is to formally capture the changes that are to be implemented. The output of the Change Conceptualisation is a list of formalised changes. During the change evaluation activity, the formalised changes are evaluated against the ontology, to ensure that the ontology remains consistent and coherent, taking
+                                    them as input and producing an evaluation report as output . Therefore, this activity requires the list of formalised changes for the evaluation to be executed and outputs an evaluation report.
+                                </p>
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Conceptualization:</strong>
+                                            <ul>
+                                                <li><a href="https://www.microsoft.com/es-es/microsoft-365/microsoft-whiteboard/digital-whiteboard-app" target="_blank">Microsoft Whiteboard</a> - The visual collaboration canvas in Microsoft 365 for flexible work and learning.</li>
+                                                <li><a href="https://chowlk.linkeddata.es/notation.html" target="_blank">Chowlk</a> - A set of recommendations for ontology diagrams representation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>
+                                                <li><a href="https://app.diagrams.net/" target="_blank">Diagrams</a> - A free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.</li>
+                                                <li><a href="https://www.jarrar.info/publications/JM08.V8.pdf" target="_blank">DOGMA</a> - A methodological framework for ontology engineering.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Evaluation:</strong>
+                                            <ul>
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </p>
                                 <br>
                                 <p>
-                                     <b>Ontology Update.</b> In the first sub-activity of ontology update, a change is encoded (change encoding). In this activity, an engineer applies the necessary formalised changes to the ontology, similarly to the ontology encoding sub-activity within the high-level ontology implementation activity. The output of this activity is a new ontology in code format (ontology code).
-
-                                     
+                                     <b>Ontology Update.</b> In the first sub-activity (Ontology Conceptualization) of ontology update the ontology model is built from the new set of ontological requirements from the previous step. In the next sub-activity (Ontology Encoding), an engineer applies the necessary formalised changes to the ontology, similarly to the ontology encoding sub-activity within the high-level ontology implementation activity. The output of this activity is the code of a new ontology. Then the ontology is evaluated before being published.      
                                 </p>
-                           
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Change Encoding:</strong>
+                                            <ul>
+                                                <li><a href="https://github.com/dgarijo/Widoco" target="_blank">Widoco</a> - A wizard for documenting ontologies.</li>                                                
+                                                <li><a href="https://chowlk.linkeddata.es/notation.html" target="_blank">Chowlk</a> - A set of recommendations for ontology diagrams representation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>
+                                                <li><a href="https://app.diagrams.net/" target="_blank">Diagrams</a> - A free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.</li>
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Ontology Evaluation:</strong>
+                                            <ul>
+                                                <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://oops.linkeddata.es/" target="_blank">OOPS!</a> - An on-line tool for ontology evaluation.</li>
+                                                <li><a href="https://protege.stanford.edu/" target="_blank">Protégé</a> - A free, open-source ontology editor and framework for building intelligent systems</li>                                                
+                                                <li><a href="https://rdfshape.weso.es/" target="_blank">RDFShape</a> - A playground for RDF data conversion, validation and visualization, among other features.</li>                                                
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
 
                             </div>
                         </div>
@@ -207,10 +252,10 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kgconstruct.png"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_Viewdetail2.drawio.png"
                                              class="figure-img img-fluid rounded" height="90%" width="90%"
                                              alt="Ontology implementation workflow.">
-                                        <figcaption class="figure-caption text-center">Knowledge Graph Engineering
+                                        <figcaption class="figure-caption text-center">Knowledge Graph Engineering Extension Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
@@ -229,6 +274,84 @@
                                     </li>
                                     </ul>
                                 </p>
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Data Preparation:</strong>
+                                            <ul>
+                                                <li><a href="https://docs.triply.cc/triply-etl/" target="_blank">Triply ETL</a> - TriplyETL allows you to create and maintain production-grade linked data pipelines.</li>
+                                                <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a> - A fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                                                                
+                                                <li><a href="https://github.com/oxigraph/oxigraph" target="_blank">Oxigraph</a> -  A graph database implementing the SPARQL standard.</li>
+                                                <li><a href="https://www.dremio.com/" target="_blank">Dremio</a> - A lakehouse built natively on Apache Iceberg, Polaris, and Arrow - providing flexibility, preventing lock-in, and enabling community-driven innovation.</li>
+                                                <li><a href="https://www.getdbt.com/" target="_blank">DBT</a> - An open-source command line tool that helps analysts and engineers transform data in their warehouse more effectively.</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                                <li><a href="https://openrefine.org/" target="_blank">Open Refine</a> - A powerful free, open source tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.</li>
+                                                <li><a href="https://cline.bot/" target="_blank">Cline</a> - A fully collaborative AI partner that's open source, fully extensible, and designed to amplify developer impact.</li>
+                                                <li><a href="https://openai.com/" target="_blank">GPT</a> - A a generative artificial intelligence chatbot.</li>
+                                       </ul>
+                                        </li>
+                                        <li><strong>Mapping Generation:</strong>
+                                            <ul>
+                                                <li><a href="https://rml.io/yarrrml/" target="_blank">YARRRML</a> - A human readable text-based representation for declarative Linked Data generation rules.</li>
+                                                <li><a href="https://github.com/RMLio/yarrrml-parser" target="_blank">YARRRML Parser</a> - A library allows to convert YARRRML rules to RML or R2RML rules.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://cline.bot/" target="_blank">Cline</a> - A fully collaborative AI partner that's open source, fully extensible, and designed to amplify developer impact.</li>
+                                                <li><a href="https://github.com/citiususc/yatter" target="_blank">Yatter</a> - A tool for translating mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.</li>
+                                                <li><a href="https://kg-construct.github.io/rml-core/spec/docs/" target="_blank">RML</a> - A generic mapping language, based on and extending R2RML</li>
+                                                <li><a href="https://github.com/cefriel/chimera" target="_blank">Chimera</a> - A framework implemented on top of Apache Camel offering components to define schema and data transformation pipelines based on Semantic Web solutions.</li>                                               
+                                                <li><a href="https://sparql-anything.cc/" target="_blank">SPARQL Anything</a> - A system for Semantic Web re-engineering that allows users to query anything with SPARQL.</li>
+                                                <li><a href="https://shexml.herminiogarcia.com/" target="_blank">ShExML</a> - A language based on ShEx to map and merge heterogeneous data sources.</li>
+                                                <li><a href="https://ontopic.ai/en/ontopic-studio/" target="_blank">Ontopic Studio</a> - An environment for building knowledge graphs from relational data.</li>
+                                                <li><a href="http://gitlab.com/somanyaircraft/tinyrml" target="_blank">Tiny RML</a> - An implementation of a subset of RML and R2RML with some helpful extended features.</li>
+                                                <li><a href="https://github.com/chrdebru/r2rml" target="_blank">R2RML-F</a> - An R2RML Implementation.</li>
+                                                <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a> - A fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.</li>
+                                                <li><a href="https://rdf4j.org/" target="_blank">RDF4J</a> - A powerful Java framework for processing and handling RDF data.</li>
+                                                <li><a href="https://openai.com/" target="_blank">GPT</a> - A a generative artificial intelligence chatbot.</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                         <li><strong>Data Transformation:</strong>
+                                            <ul>
+                                                <li><a href="https://github.com/RMLio/rmlmapper-java" target="_blank">RMLMapper</a> - A tool that executes RML rules to generate Linked Data.</li>
+                                                <li><a href="https://github.com/morph-kgc" target="_blank">Morph-KGC</a> - An engine that constructs RDF knowledge graphs from heterogeneous data sources with the R2RML and RML mapping languages.</li>
+                                                <li><a href="https://github.com/cefriel/chimera" target="_blank">Chimera</a> - A framework implemented on top of Apache Camel offering components to define schema and data transformation pipelines based on Semantic Web solutions.</li>                                               
+                                                <li><a href="https://sparql-anything.cc/" target="_blank">SPARQL Anything</a> - A system for Semantic Web re-engineering that allows users to query anything with SPARQL.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/vliz-be-opsci/pysubyt" target="_blank">py-SUbyT</a> - A Python library for Semantic Uplifting by Templates.</li>                                                
+                                                <li><a href="https://github.com/frmichel/morph-xr2rml" target="_blank">Morph-xR2RML</a> - An implementation of the xR2RML mapping language that enables the description of mappings from relational or non relational databases to RDF.</li>                                                
+                                                <li><a href="https://github.com/frmichel/sparql-micro-service" target="_blank">SPARQL Micro-Services</a> - An architecture that enables querying Web APIs with SPARQL, as well as assigning dereferenceable URIs to Web API resources that do not have a URI in the first place.</li>                                                
+                                                <li><a href="https://jena.apache.org/" target="_blank">Jena</a> - A free and open source Java framework for building Semantic Web and Linked Data applications.</li>                                                
+                                                <li><a href="https://www.rdfhdt.org/" target="_blank">HDT</a> - A a compact data structure and binary serialization format for RDF.</li>                                                
+                                                <li><a href="https://cline.bot/" target="_blank">Cline</a> - A fully collaborative AI partner that's open source, fully extensible, and designed to amplify developer impact.</li>
+                                                <li><a href="https://openai.com/" target="_blank">GPT</a> - A a generative artificial intelligence chatbot.</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Constraint Generation: </strong>
+                                            <ul>
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="http://astrea.linkeddata.es/" target="_blank">Astrea</a> - A tool that produces the SHACL shape that can be infered from one, or more, ontologies.</li>
+                                                <li><a href="https://www.python.org/" target="_blank">Python</a> - A programming language that lets you work quickly and integrate systems more effectively.</li>
+                                                <li><a href="https://shexml.herminiogarcia.com/" target="_blank">ShExML</a> - A language based on ShEx to map and merge heterogeneous data sources.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                                <li><a href="https://cline.bot/" target="_blank">Cline</a> - A fully collaborative AI partner that's open source, fully extensible, and designed to amplify developer impact.</li>
+                                                <li><a href="https://openai.com/" target="_blank">GPT</a> - A a generative artificial intelligence chatbot.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Data Validation: </strong>
+                                            <ul>
+                                                <li><a href="https://jena.apache.org/documentation/shacl/" target="_blank">Jena SHACL</a> - An implementation of the W3C Shapes Constraint Language (SHACL).</li>
+                                                <li><a href="https://github.com/RDFLib/pySHACL" target="_blank">pySHACL</a> - A Python validator for SHACL.</li>
+                                                <li><a href="https://openai.com/" target="_blank">GPT</a> - A a generative artificial intelligence chatbot.</li>
+                                                <li><a href="https://cline.bot/" target="_blank">Cline</a> - A fully collaborative AI partner that's open source, fully extensible, and designed to amplify developer impact.</li>                                                
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
                                 <br>
                                 <p>
                                     <b>Knowledge Graph Publication.</b> The high-level KG publication activity is a counterpart to the ontology publication activity. It captures the necessary tasks and steps which are taken to document and make the KG available online. The output of this activity is the documented KG and the online accessible resource. The lower-level activities part of the KG publication are documentation and data publication. During the documentation step, the mappings, RDF data, SHACL shapes and validation report are used to document the process and output of the implementation. The output is the HTML documentation, which can then be published during the data publication step alongside the online KG.
@@ -239,16 +362,59 @@
                                             <li><a href="https://doi.org/10.1007/978-3-030-62466-8_4" target="_blank">OBA: An ontology-based framework for creating REST APIs for knowledge graph</a></li>
                                             <li><a href="https://doi.org/10.1007/s00778-021-00711-3" target="_blank">A survey of RDF stores & SPARQL engines for querying knowledge graphs</a></li>
                                             <li><a href="https://github.com/oeg-upm/rmldoc" target="_blank">RMLdoc: Human-readable documentation for RML Mappings</a></li>
-                                            
+                                        </ul>
+                                    </li>                                   
+                                    </ul>
+                                <p>
+                                     <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                    <li><strong>Documentation:</strong>
+                                         <ul>
+                                            <li><a href="https://github.com/" target="_blank">Github</a> - A proprietary developer platform that allows developers to create, store, manage, and share their code.</li>
+                                            <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a> - A comprehensive AI-powered DevSecOps Platform.</li>
+                                            <li><a href="https://zenodo.org/" target="_blank">Zenodo</a> - A general-purpose open repository.</li>
+                                            <li><a href="https://www.atlassian.com/es/software/confluence" target="_blank">Confluence</a> - A web-based corporate wiki .</li>
+                                            <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            <li><a href="https://markdown.com/" target="_blank">Markdown</a> - A lightweight markup language for creating formatted text using a plain-text editor.</li>
                                         </ul>
                                     </li>
+                                    <li><strong>Publication:</strong>
+                                        <ul>
+                                            <li><a href="https://triplydb.com/" target="_blank">Triply DB Data Stories</a> - A way of communicating information about your linked data along with explanatory text while also being able to integrate query results.</li>
+                                            <li><a href="https://github.com/" target="_blank">Github</a> - A proprietary developer platform that allows developers to create, store, manage, and share their code.</li>
+                                            <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a> - A comprehensive AI-powered DevSecOps Platform.</li>
+                                            <li><a href="https://zenodo.org/" target="_blank">Zenodo</a> - A general-purpose open repository.</li>
+                                            <li><a href="https://vos.openlinksw.com/owiki/wiki/VOS/VOSRDFFAQ" target="_blank">Virtuoso</a> - A database function within the Virtuoso database system specifically designed for managing and querying RDF data.</li>
+                                            <li><a href="https://vos.openlinksw.com/owiki/wiki/VOS/VOSRDFFAQ" target="_blank">GraphDB</a> - An enterprise ready Semantic Graph Database.</li>
+                                            <li><a href="https://w3id.org/" target="_blank">W3id</a> - A secure, permanent URL re-direction service for Web applications.</li>
+                                            <li><a href="https://graphql.org/" target="_blank">GraphQL</a> - A data query and manipulation language that allows specifying what data is to be retrieved or modified.</li>
+                                            <li><a href="https://github.com/Data2Semantics/brwsr" target="_blank">brwsr</a> - A Lightweight Linked Data Browser.</li>
+                                            <li><a href="https://jena.apache.org/" target="_blank">Jena</a> - A free and open source Java framework for building Semantic Web and Linked Data applications.</li>                                                
+                                            <li><a href="https://metaphacts.com/metaphactory?semanticSearch-search1=N4IgziBcoNZQbAGhANyiEyAmB7dYBjACwFMBbAQ0gGEAnEigFwEsUSB1HWuAXx6A" target="_blank">Metaphactory</a> - Transforms your data into consumable, contextual & actionable knowledge and drives continuous decision intelligence using knowledge graphs and AI.</li>
+                                            <li><a href="http://github.com/metaphacts/ontodia" target="_blank">Ontodia</a> -  A JavaScript library that allows to visualize, navigate and explore data in the form of an interactive graph based on underlying data sources.</li>
+                                        </ul>
+                                        </li>
                                     </ul>
-
                                 </p>
                                  <br>
                                  <p>
-                                    <b>Knowledge Graph Maintenance.</b> This task is modelled along the same lines as the ontology maintenance task. It is specifically aimed at fixing bugs in the already published KG. This step does not capture proper evolution, the changes within the ontology or the data sources. Therefore, the detailed activity is named bug detection. The output of the activity is the issues and bugs to be fixed by backtracking in the process.
-
+                                    <b>Knowledge Graph Maintenance.</b> This task is modelled along the same lines as the ontology maintenance task. It is specifically aimed at fixing bugs in the already published KG. This step does not capture proper evolution, the changes within the ontology or the data sources. Therefore, the detailed activity is named bug detection. The output of the activity is the issues and bugs to be fixed by backtracking in the process. The new data requirements task refers to updates in the input data sources that trigger ontology and/or KG update activities.
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Bug Detection:</strong>
+                                            <ul>
+                                                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system that tracks versions of files.</li>
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
+                                                <li><a href="https://airflow.apache.org/" target="_blank">Apache airflow</a> - A web-based corporate wiki .</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
                                      
 
                                 </p>
@@ -265,15 +431,14 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="text-center">
                                     <figure class="figure">
-                                        <img src="../resources/images/LOT4KG/LOT4KG-detailed-kglifecycle.png" class="figure-img img-fluid rounded"
+                                        <img src="../resources/images/LOT4KG/LOT4KG-V8_Viewdetail3.drawio.png" class="figure-img img-fluid rounded"
                                              height="90%" width="90%" alt="Ontology publication workflow.">
-                                        <figcaption class="figure-caption text-center">Knowledge Graph and Ontology Evolution
+                                        <figcaption class="figure-caption text-center">Knowledge Graph Lifecycle Workflow
                                         </figcaption>
                                         <br>
                                     </figure>
                                 </div>
                                 <p>
-
                                 <b>Change Detection and Impact Analysis Step</b>. To be able to update an already existing KG, the changes applied to the ontology need to be examined and analysed against the KG. We define two sub-activities: detect delta (optional) and assess change impact.  The main output of this activity is a list of relevant changes, relevant for the update of the KG.
 
                                     <ul class="list-unstyled">
@@ -284,6 +449,18 @@
                                     </li>
                                     </ul>
                                 </p>
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Delta Detection:</strong>
+                                            <ul>
+                                                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system that tracks versions of files.</li>
+                                                <li><a href="https://www.man7.org/linux/man-pages/man1/diff.1.html" target="_blank">UNIX Diff</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
                                 <br>
                                 <p>
                                 <b>Knowledge Graph Update</b>. This activity, just as the one for updating the ontology, serves as a mirror to the KG implementation activity. Its purpose is to bring the KG up to date with regards to any types of changes in the ontology or source data. Hence, the KG update activity can be triggered from the change detection activities which provide the list of ontology changes, or from changes to the source data, depicted by the arrow connecting the KG maintenance activity with KG update. The KG update activity has four sub-activities that make it possible to update the KG, each of them associated with the corresponding assets of the KG implementation (mappings, RDF graph, constraints and validation report). The high-level output is the updated RDF graph and its associated assets (i.e. mappings, data constraints, and validation report), which are to be published using the KG publishing activity.
@@ -291,10 +468,46 @@
                                     <ul class="list-unstyled">
                                     <li><strong>Recommended reads:</strong>
                                         <ul>
-                                            <li><a href="https://openreview.net/pdf?id=ONL4LGlHNu" target="_blank">Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs</a></li>
+                                            <li><a href="https://eview.net/pdf?id=ONL4LGlHNu" target="_blank">Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs</a></li>
                                             <li><a href="https://www.semantic-web-journal.net/content/incrml-incremental-knowledge-graph-construction-heterogeneous-data-sources" target="_blank">IncRML: Incremental Knowledge Graph Construction from Heterogeneous Data Sources</a></li>
                                         </ul>
                                     </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <b>Recommended Tools (based on the survey):</b>
+                                    <ul>
+                                        <li><strong>Mappings Update:</strong>
+                                            <ul>
+                                                <li><a href="https://rml.io/yarrrml/" target="_blank">YARRRML</a> - A human readable text-based representation for declarative Linked Data generation rules.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/citiususc/yatter" target="_blank">Yatter</a> - A tool for translating mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Transformation:</strong>
+                                            <ul>
+                                                <li><a href="https://github.com/morph-kgc" target="_blank">Morph-KGC</a> - An engine that constructs RDF knowledge graphs from heterogeneous data sources with the R2RML and RML mapping languages.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Constraints Update:</strong>
+                                            <ul>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://github.com/RDFLib/rdflib" target="_blank">RDFlib</a> - A Python library for working with RDF, a simple yet powerful language for representing information.</li>                                                
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Validation:</strong>
+                                            <ul>
+                                                <li><a href="https://research-software-directory.org/software/grlc" target="_blank">GRLC</a> - Builds a web API from SPARQL queries hosted on GitHub to accessing triple store data.</li>                                                
+                                                <li><a href="https://www.w3.org/TR/sparql11-query/" target="_blank">SPARQL</a> - A language for querying RDF data.</li>
+                                                <li><a href="https://www.w3.org/TR/shacl/" target="_blank">SHACL</a> - A language for validating RDF graphs against a set of conditions.</li>
+                                                <li><a href="https://github.com/RDFLib/pySHACL" target="_blank">pySHACL</a> - A Python validator for SHACL.</li>
+                                                <li><a href="https://github.com/metaphacts/metaphacts-etl-pipeline" target="_blank">Metaphacts ETL Pipeline</a> - Provides a means to convert structured data to RDF, perform post-processing steps, and ingest it into a graph database.</li>
+
+                                            </ul>
+                                        </li>                                         
                                     </ul>
                                 </p>
                             </div>
@@ -312,15 +525,14 @@
         <div class="container-fluid " style="background:#eeeeee !important">
             <h2 style="text-align: center;">Complete LOT4KG methodology detailed view</h2>
             <div class="col-md-10 col-md-offset-1">
-                <p> Coming soon...</p>
-               <!-- <div class="text-center">
+                <div class="text-center">
                     <figure class="figure">
-                        <img src="../resources/images/workflow-complete.png" class="figure-img img-fluid rounded"
+                        <img src="../resources/images/LOT4KG/LOT4KG-V8-green.drawio.png" class="figure-img img-fluid rounded"
                              alt="Ontology implementation workflow.">
                         <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
                         <br>
                     </figure>
-                </div> -->
+                </div> 
                 <p class="text-center"><strong>The LOT4KG methodology figures are available for reuse in the <a
                         href="https://github.com/oeg-upm/LOT-resources/tree/master/figures" target="_blank">LOT Github
                     repository</a> under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
@@ -331,20 +543,67 @@
 
     </section>
 
+    <section id="video">
+        <div class="container-fluid" style="background:#f9f9f9">
+            <h2 style="text-align: center;">Video Tutorial</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="text-center">
+                    <p>Watch a video tutorial of the LOT4KG methodology:</p>
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-bottom:20px;">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rZDZJ6ikzW4" allowfullscreen title="LOT4KG Methodology Video"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        $(document).ready(function () {
+            $("#videoNav").on("click", function (e) {
+                $('li.active').removeClass('active');
+                $('#videoNavLi').addClass('active');
+            });
+        });
+    </script>
+
+    <section id="survey">
+        <div class="container-fluid" style="background:#ffffff">
+            <h2 style="text-align: center;">Survey</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="text-center">
+                    <p>
+                        The LOT4KG methodology has been validated through a survey. You can explore the survey's raw anonymised data, scripts, and aditional findings:
+                    </p>
+                    <ul style="list-style-type:none; padding-left:0;">
+                        <li>
+                            <a href="https://github.com/oeg-upm/LOT-resources/tree/master/website/LOT4KG/survey" target="_blank">
+                                <i class="fa fa-github"></i> LOT4KG Survey Repository
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <p>
+                        The following table displays the validation results, it has been ordered by the number of checkmarks per row, from highest to lowest. The top row shows the percentage of coverage for the particular sub-activity in the form of a pie chart. Each of the rows is a response for the survey question (R), for the anonymised survey responses AR was used. The table shows the coverage of each of the LOT4KG subactivities with a checkmark. The survey also collected the list of tools and resources for each sub-activity.    
+                    </p>
+                    <br>
+                    <img src="../resources/images/LOT4KG/LOT4KG_Survey.png" alt="LOT4KG Survey Results" class="img-responsive center-block" style="max-width:80%; margin-top:20px;">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="cite">
 
-        <div class="container-fluid" style="background:#ffffff">
+        <div class="container-fluid" style="background:#f9f9f9">
             <h2 style="text-align: center;">How to cite </h2>
             <div class="col-md-10 col-md-offset-1">
 
 
                 <div class="text-center">
-                   <!-- <p>If you are using the content of LOT4KG methodology you should cite: <i>Romana Pernisch, David Chaves-Fraga, María Poveda-Villalón, Lise Stork, and Diego Conde-Herreros. LOT4KG: A Joint Methodology for the Ontology and Knowledge Graph Lifecycle. Under Review (ISWC2025).</i>
-                    </p> --->
-                    <p>If you are using the content of LOT methodology you should cite: <i>Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
-                    </p> <br>
+                   <p>If you are using the content of LOT4KG methodology you should cite: <i>Pernisch R., Chaves-Fraga D., Stork L., Conde-Herreros D.,  Poveda-Villalón, M., LOT4KG: A Joint Methodology for the Ontology and Knowledge Graph Lifecycle. Under Review (ISWC2025).</i>
+                    </p>
+                    <!--<p>If you are using the content of the LOT4KG methodology you should cite: <i>Pernisch R., Chaves-Fraga D., Stork L., Conde-Herreros D.,  Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. <a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a></i>
+                    </p>--> <br>
                 </div>
 
                 
