@@ -527,7 +527,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="text-center">
                     <figure class="figure">
-                        <img src="../resources/images/LOT4KG/LOT4KG-V8-green.drawio.png" class="figure-img img-fluid rounded"
+                        <img src="../resources/images/LOT4KG/LOT4KG-V8_detail.drawio.png" class="figure-img img-fluid rounded"
                              alt="Ontology implementation workflow.">
                         <figcaption class="figure-caption text-center">Methodology detailed workflow</figcaption>
                         <br>
@@ -586,11 +586,216 @@
                         The following table displays the validation results, it has been ordered by the number of checkmarks per row, from highest to lowest. The top row shows the percentage of coverage for the particular sub-activity in the form of a pie chart. Each of the rows is a response for the survey question (R), for the anonymised survey responses AR was used. The table shows the coverage of each of the LOT4KG subactivities with a checkmark. The survey also collected the list of tools and resources for each sub-activity.    
                     </p>
                     <br>
-                    <img src="../resources/images/LOT4KG/LOT4KG_Survey.png" alt="LOT4KG Survey Results" class="img-responsive center-block" style="max-width:80%; margin-top:20px;">
-                </div>
-            </div>
-        </div>
-    </section>
+                    <style>
+                        table {
+                        border-collapse: collapse;
+                        font-size: 11px;
+                        }
+                        th, td {
+                        border: 1px solid #ccc;
+                        padding: 3px;
+                        text-align: center;
+                        }
+                        th {
+                        writing-mode: vertical-rl;
+                        transform: rotate(180deg);
+                        white-space: nowrap;
+                        }
+                        .checkmark::before {
+                        content: "✓";
+                        }
+                    </style>
+                    <table>
+                    <thead>
+                        <tr>
+                        <th></th>
+                        <th>KG</th>
+                        <th>Requirements</th>
+                        <th>Implementation</th>
+                        <th>Publication</th>
+                        <th>Maintenance</th>
+                        <th>Change concept.</th>
+                        <th>Change evaluation</th>
+                        <th>Change encoding</th>
+                        <th>Onto. evaluation</th>
+                        <th>Data preparation</th>
+                        <th>Mapping dev.</th>
+                        <th>Data transf.</th>
+                        <th>Constraints dev.</th>
+                        <th>Data validation</th>
+                        <th>Documentation</th>
+                        <th>Publication</th>
+                        <th>Bug Detection</th>
+                        <th>Detect delta</th>
+                        <th>Assess impact</th>
+                        <th>Mapping update</th>
+                        <th>Data transf.</th>
+                        <th>Constraints update</th>
+                        <th>Data validation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Activity Coverage</td>
+                        <td></td>
+                        <td>
+                            <canvas id="pie1" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">93.75%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie2" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">93.75%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie3" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">65.63%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie4" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">71.88%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie5" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">77.42%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie6" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">54.84%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie7" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">61.29%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie8" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">48.39%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie9" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">87.10%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie10" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">93.55%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie11" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">74.19%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie12" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">58.06%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie13" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">83.87%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie14" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">77.42%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie15" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">83.87%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie16" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">64.52%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie17" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">16.13%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie18" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">35.48%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie19" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">83.87%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie20" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">67.74%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie21" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">45.16%</div>
+                        </td>
+                        <td>
+                            <canvas id="pie22" width="40" height="40"></canvas>
+                            <div style="font-size:10px;">54.84%</div>
+                        </td>
+                    </tr>
+                    <script>
+                        // Activity coverage percentages
+                        var coverage = [
+                            93.75,93.75,65.625,71.875,77.4194,54.8387,61.2903,48.3871,87.0968,93.5484,
+                            74.1935,58.0645,83.871,77.4194,83.871,64.5161,16.129,35.4839,83.871,67.7419,45.1613,54.8387
+                        ];
+                        for(let i=0;i<coverage.length;i++){
+                            let canvas = document.getElementById('pie'+(i+1));
+                            if(canvas && canvas.getContext){
+                                let ctx = canvas.getContext('2d');
+                                let percent = coverage[i];
+                                let angle = (percent/100)*2*Math.PI;
+                                // Draw background circle (gray)
+                                ctx.beginPath();
+                                ctx.arc(20,20,18,0,2*Math.PI);
+                                ctx.fillStyle = "#e0e0e0";
+                                ctx.fill();
+                                // Draw coverage arc (green)
+                                ctx.beginPath();
+                                ctx.moveTo(20,20);
+                                ctx.arc(20,20,18,-Math.PI/2,angle-Math.PI/2,false);
+                                ctx.closePath();
+                                ctx.fillStyle = "#4CAF50";
+                                ctx.fill();
+                                // Optional: Draw white center for donut effect
+                                ctx.beginPath();
+                                ctx.arc(20,20,10,0,2*Math.PI);
+                                ctx.fillStyle = "#fff";
+                                ctx.fill();
+                            }
+                        }
+                    </script>
+                    <tr><td>R6</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R16</td><td><a href="https://data-interop.era.europa.eu/era-vocabulary/" target="_blank">European Union Agency for Railways (ERA)</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R9</td><td><a href="http://zenodo.org/records/13943296" target="_blank">Building Information aGGregation (BIGG))</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R91</td><td><a href="https://www.dimensions.ai/products/" target="_blank">Dimensions</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>AR97</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R8</td><td><a href="https://lov.linkeddata.es/dataset/lov/vocabs/edifact-o" target="_blank">EDIFACT Ontology</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R93</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td></tr>
+                    <tr><td>R75</td><td><a href="https://dl.acm.org/doi/10.1145/3474829" target="_blank">CIDOC-CRM</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R3</td><td><a href="https://zenodo.org/records/10566775" target="_blank">OfficeGraph</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R77</td><td><a href="https://data.odeuropa.eu/" target="_blank">Odeorupa</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R73</td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R11</td><td><a href="https://link.springer.com/chapter/10.1007/978-3-031-60635-9_11" target="_blank">Mlsea</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R60</td><td><a href="https://www.w3id.org/simulation/data/" target="_blank">Simulation Ontology</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>AR38</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td></tr>
+                    <tr><td>AR84</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R61</td><td><a href="https://doi.org/10.5281/zenodo.7443000" target="_blank">Knowledge Hub Ontology</a></a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R31</td><td><a href="https://marineregions.org/" target="_blank">Marine Regions</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td ></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R5</td><td><a href="https://doi.org/10.5281/zenodo.13895534" target="_blank">Scihyp</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R21</td><td><a href="https://link.springer.com/chapter/10.1007/978-3-031-60626-7_15" target="_blank">Cybermapping</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>R17</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td></tr>
+                    <tr><td>R15</td><td><a href="https://lod.ehri-project-test.eu/" target="_blank">Ehri Portal</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>R12</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>AR22</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td></tr>
+                    <tr><td>R14</td><td><a href="https://polifonia.kmi.open.ac.uk/meetups/" target="_blank">Polifonia meetups</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>R35</td><td><a href="https://doi.org/10.5281/zenodo.10381606" target="_blank">Issa agritrop dataset</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>R20</td><td><a href="https://doi.org/10.5281/zenodo.7765894" target="_blank">SWeMLS-KG</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>R27</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td></tr>
+                    <tr><td>R18</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td></tr>
+                    <tr><td>R95</td><td><a href="https://doi.org/10.5281/zenodo.14162432" target="_blank">Katy-kg</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>R10</td><td><a href="http://w3id.org/deliberation/ontology" target="_blank">Deliberation knowledge graph</a></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>R13</td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td class="checkmark" style="background-color:#c6efce;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    </tbody>
+                    </table>                </div>
+                                </div>
+                            </div>
+                        </section>
 
     <section id="cite">
 
