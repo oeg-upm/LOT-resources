@@ -27,21 +27,45 @@
 
         }
 
+        #stories .thumbnail {
+            height: 320px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        #stories .img-story {
+            max-height: 150px;
+            max-width: 150px;
+            margin: 0 auto 10px auto;
+        }
+
+        #stories .caption p {
+            font-size: 14px;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+
         .video-wrapper {
-    max-width: 1200px;        /* Ajusta según necesites */
-    margin: 0 auto 20px;     /* Centramos y separamos abajo */
-    aspect-ratio: 16/9;      /* Alto = ancho * 9/16 */
-  }
-  /* Reemplazamos padding-bottom de Bootstrap y aseguramos tamaño total */
-  .video-wrapper.embed-responsive-16by9 {
-    padding-bottom: 0 !important;
-    height: auto !important;
-  }
-  .video-wrapper iframe,
-  .video-wrapper .embed-responsive-item {
-    width: 100% !important;
-    height: 100% !important;
-  }
+            max-width: 1200px;       
+            margin: 0 auto 20px;     
+            aspect-ratio: 16/9;      
+          }
+          
+          .video-wrapper.embed-responsive-16by9 {
+            padding-bottom: 0 !important;
+            height: auto !important;
+          }
+          .video-wrapper iframe,
+          .video-wrapper .embed-responsive-item {
+            width: 100% !important;
+            height: 100% !important;
+          }
 
     </style>
     <!--  <link href="../index_files/css/bootstrap-responsive.css" rel="stylesheet"> -->
@@ -559,44 +583,44 @@
 
     </section>
         <!-- Add section casos de exito -->
-    <section id="stories">
-        <div class="container-fluid" style="background:#f9f9f9 " >
+    
+    <section id="stories" style="background:#f9f9f9;">
+    <div class="container" style="background:#f9f9f9; padding: 20px 0;">
 
-            <h2 style="text-align: center;">Success stories</h2>
-            <div class="album py-12 col-md-12">
-                <div class="container ">
+        <h2 style="text-align: center; margin-bottom: 20px;">Success stories</h2>
+        <div class="row" style="text-align: center;">
 
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-
-                        <div class="col-md-4 d-flex">
-                            <div class="card mb-4 box-shadow flex-fill" >
-                                <a href="https://www.vicinity2020.eu" target="_blank"><img class="card-img-top img-responsive" src="../resources/images/LOT4KG/Orange_logo.svg.png" target="_blank"alt="ORANGE" ></a>
-                                <div class="card-body d-flex flex-column">
-                                    <p class="card-text">LOT4KG has been selected for guiding the development of a knowledge graph-based network digital twin project at scale within Orange France.</p>
-
-                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://datatracker.ietf.org/doc/draft-tailhardat-nmop-incident-management-noria/" target="_blank">View details &raquo;</a>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                         <div class="offset-md-4 col-md-4 d-flex">
-                            <div class="card mb-4 box-shadow flex-fill">
-                                <a href="https://delta-h2020.eu/" target="_blank"><img class="card-img-top img-responsive" src="../resources/images/LOT4KG/etsi.svg" alt="ETSI TC-DATA"></a>
-                                <div class="card-body d-flex flex-column">
-                                    <p class="card-text">Promoted by Teléfonica, LOT4KG is used for the KG development as a building block of the ETSI TC-DATA working group. </p>
-                                    <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary"><a href="https://datatracker.ietf.org/meeting/interim-2025-nmop-03/materials/slides-interim-2025-nmop-03-sessa-draft-marcas-nmop-kg-construct-00.pdf" target="_blank">View details &raquo;</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
+                <div class="thumbnail">
+                    <a href="https://datatracker.ietf.org/doc/draft-tailhardat-nmop-incident-management-noria/" target="_blank">
+                        <img class="img-responsive img-story" src="../resources/images/LOT4KG/Orange_logo.svg.png" alt="ORANGE">
+                    </a>
+                    <div class="caption">
+                        <p>LOT4KG has been selected for guiding the development of a knowledge graph-based network digital twin project at scale within Orange France.</p>
+                        <p>
+                            <a href="https://datatracker.ietf.org/doc/draft-tailhardat-nmop-incident-management-noria/" class="btn btn-primary btn-sm" role="button" target="_blank">View details &raquo;</a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
+                <div class="thumbnail">
+                    <a href="https://datatracker.ietf.org/meeting/interim-2025-nmop-03/materials/slides-interim-2025-nmop-03-sessa-draft-marcas-nmop-kg-construct-00.pdf" target="_blank">
+                        <img class="img-responsive img-story" src="../resources/images/LOT4KG/etsi.svg" alt="ETSI TC-DATA">
+                    </a>
+                    <div class="caption">
+                        <p>Promoted by Teléfonica, LOT4KG is used for the KG development as a building block of the ETSI TC-DATA working group.</p>
+                        <p>
+                            <a href="https://datatracker.ietf.org/meeting/interim-2025-nmop-03/materials/slides-interim-2025-nmop-03-sessa-draft-marcas-nmop-kg-construct-00.pdf" class="btn btn-primary btn-sm" role="button" target="_blank">View details &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <section id="video">
     <div class="container-fluid" style="background:#eeeeee">
       <h2 style="text-align: center;">Video Tutorial</h2>
